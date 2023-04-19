@@ -1,0 +1,10 @@
+.navbar {
+    &__container {
+        background-color: whitesmoke;
+        display: flex;
+        height: 3rem;
+        width: 100%;
+        align-items: center;
+        justify-content: space-around;
+    }
+}
