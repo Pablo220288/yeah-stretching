@@ -1,5 +1,6 @@
 
 export * from './About';
+export * from './Button';
 export * from './Footer';
 export * from './ContactForm';
 export * from './Home';
