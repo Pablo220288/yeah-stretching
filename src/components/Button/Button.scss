@@ -1,0 +1,21 @@
+.btn-primary {
+    background-clip: padding-box;
+    border-radius: 0.5;
+    background-color: $clr-pink-700;
+    color: $clr-black;
+    font-family: $ff-primary;
+    font-size: 0.6rem;
+    border: 0;
+    padding: 0.4em 0.7em;
+}
+
+.btn-muted {
+    background-clip: padding-box;
+    border-radius: 0.5;
+    background-color: $clr-grey-700;
+    color: $clr-black;
+    font-family: $ff-primary;
+    font-size: 0.6rem;
+    border: 0;
+    padding: 0.4em 0.7em;
+}
