@@ -1,7 +1,7 @@
 
 
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import { About, ContactForm, Footer, Home, Navbar } from './components';
+import { About, ContactForm, Footer, Home, Navbar, Service } from './components';
 import './style.scss'
 
 
@@ -10,8 +10,9 @@ export const App = () => {
     <BrowserRouter>
       <Navbar />
       <Routes>
-        <Route path='/about' element={<About />} />
         <Route path='/*' element={<Home />} />
+        <Route path='/about' element={<About />} />
+        <Route path='/service' element={<Service />} />
         <Route path='/contact' element={<ContactForm />} />
       </Routes>
       <Footer />
