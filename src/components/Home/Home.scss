@@ -12,6 +12,7 @@
 .hero__title {
     width: 80%;
     margin-left: 1rem;
+    margin-bottom: 0;
 
     &--mt {
         margin-top: 2.8rem;
@@ -41,17 +42,21 @@ h2 {
 
 h4 {
     font-family: $ff-primary;
-    font-size: 0.8rem;
-    font-weight: 300;
+    font-size: 0.6rem;
+    font-weight: 400;
+    margin: 0.5em 0;
+    color: $clr-black;
 }
 
 h5 {
     font-family: $ff-primary;
     font-size: 0.6rem;
+    font-weight: 400;
+    color: $clr-black;
 }
 
 .text__highlight {
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, $clr-pink-600 40%, rgba(255, 255, 255, 0) 100%);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, $clr-pink-600 60%, rgba(255, 255, 255, 0) 100%);
     display: inline-block;
     padding: 0;
 }
