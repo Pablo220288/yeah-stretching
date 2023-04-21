@@ -1,12 +1,12 @@
 .btn-primary {
-    border-radius: 0.5;
-    background-clip: padding-box;
+    all: unset;
+    border-radius: 5px;
     background-color: $clr-pink-700;
     color: $clr-black;
     font-family: $ff-primary;
     font-size: 0.6rem;
-    border: 0;
     padding: 0.4em 0.7em;
+    cursor: pointer;
 }
 
 .btn-muted {
