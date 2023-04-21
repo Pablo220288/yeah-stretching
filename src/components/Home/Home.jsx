@@ -1,6 +1,5 @@
 import { Button } from '../Button';
 
-
 export const Home = () => {
     return (
         <section className='hero__container'>
