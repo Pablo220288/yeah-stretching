@@ -23,7 +23,7 @@ export const Service = () => {
             <h2 className="section__title">
               Stretching<span></span>
             </h2>
-            <p>
+            <p className="section__text">
               Es una disciplina orientada a estirar los músculos de nuestro
               cuerpo y a ampliar nuestro rango articular. Se trabaja a través de
               movimientos suaves y conscientes.
@@ -63,7 +63,7 @@ export const Service = () => {
             <h2 className="section__title">
               Pilates Mat<span></span>
             </h2>
-            <p>
+            <p className="section__text">
               Es una disciplina orientada a fortalecer nuestro cuerpo, a través
               de una serie de ejercicios realizados en colchoneta que combinan
               fuerza y flexibilidad.
@@ -108,7 +108,7 @@ export const Service = () => {
                 Restaurativo<span></span>
               </h2>
             </div>
-            <p>
+            <p className="section__text">
               Es una disciplina orientada a la conexión entre la mente y el
               cuerpo a través de ejercicios suaves de flexibilidad, de movilidad
               articular, de respiración y meditaciones guiadas.
@@ -153,7 +153,7 @@ export const Service = () => {
                 Empresas<span></span>
               </h2>
             </div>
-            <p>
+            <p className="section__text">
               Es una disciplina orientada a la conexión entre la mente y el
               cuerpo a través de ejercicios suaves de flexibilidad, de movilidad
               articular, de respiración y meditaciones guiadas.

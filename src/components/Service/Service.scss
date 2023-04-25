@@ -1,6 +1,7 @@
 .service__container {
   width: 100%;
-  margin-top: 100px;
+  max-width: 1000px;
+  margin: 100px auto 0px auto;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -48,7 +49,7 @@
           z-index: -1;
         }
       }
-      p {
+      .section__text {
         font-size: 0.6rem;
         line-height: 12px;
       }
@@ -81,70 +82,22 @@
       details[open].accordion .accordion__icon {
         transform: rotate(90deg);
       }
-      .section__menu__container {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
-        padding-top: 8px;
-        gap: 5px;
-        .menu__container {
-          width: 100%;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: flex-start;
-          gap: 5px;
-          .section__menu {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 2px;
-            .menu__icon {
-              display: flex;
-              align-items: center;
-              justify-content: center;
-              cursor: pointer;
-              transition: 0.3s ease-in-out;
-            }
-            .openMenu {
-              transform: rotate(90deg);
-            }
-            h4 {
-              font-family: $ff-secondary;
-              font-size: 0.8rem;
-              font-weight: 400;
-              margin: 0;
-            }
-          }
-          .section__text {
-            width: 100%;
-            padding-left: 20px;
-            height: 0;
-            opacity: 0;
-            visibility: hidden;
-            transition: all 0s;
-          }
-          .openMenu {
-            height: auto;
-            opacity: 1;
-            visibility: visible;
-            transition: all 0.3s ease;
-          }
-        }
-      }
       .btn-primary {
         margin-top: 5px;
       }
-      .service__appointment{
+      .service__appointment {
         color: $clr-black;
         font-family: $ff-secondary;
-        margin-bottom: 2px;
+        margin: 10px 0px 2px 0px;
+        font-size: 0.6rem;
+        line-height: 12px;
       }
-      .service__author{
+      .service__author {
         color: $clr-black;
         font-family: $ff-secondary;
         font-style: italic;
+        text-align: end;
+        font-size: 0.6rem;
       }
     }
   }
@@ -182,8 +135,76 @@
       height: 150px;
       max-width: 150px;
       max-height: 150px;
-      border-radius: 58% 42% 65% 35% / 39% 38% 62% 61% ;
+      border-radius: 58% 42% 65% 35% / 39% 38% 62% 61%;
       background-image: url("/src/assets/empresario-alivia-estres-laboral-meditacion.jpg");
+    }
+  }
+}
+@media (min-width: 550px) {
+  .service__container {
+    .section__service {
+      gap: 50px;
+      .section__img {
+        flex: 3;
+        height: 250px;
+        max-width: 250px;
+        max-height: 250px;
+      }
+      .section__text__container {
+        flex: 1;
+        gap: 15px;
+        .section__title {
+          font-size: 2rem;
+          span {
+            bottom: 10px;
+            height: 15px;
+          }
+        }
+        .section__text {
+          font-size: 0.9rem;
+          line-height: 17px;
+        }
+        details.accordion {
+          .accordion_title {
+            font-size: 1rem;
+            gap: 5px;
+          }
+          .accordion_text {
+            font-size: 0.75rem;
+          }
+        }
+        .btn-primary {
+          font-size: 1rem;
+        }
+        .service__appointment {
+          font-size: 0.9rem;
+          line-height: 17px;
+        }
+        .service__author {
+          font-size: 0.9rem;
+        }
+      }
+    }
+    .pilatesMat {
+      .section__img {
+        height: 200px;
+        max-width: 300px;
+        max-height: 200px;
+      }
+    }
+    .stretchingRestaurativo {
+      .section__img {
+        height: 250px;
+        max-width: 250px;
+        max-height: 250px;
+      }
+    }
+    .bienestarEmpresas {
+      .section__img {
+        height: 250px;
+        max-width: 250px;
+        max-height: 250px;
+      }
     }
   }
 }
