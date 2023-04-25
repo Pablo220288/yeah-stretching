@@ -1,0 +1,189 @@
+.service__container {
+  width: 100%;
+  margin-top: 100px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  padding: 0px 10px 50px 10px;
+  .section__service {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20px;
+    padding: 0px 10px;
+    .section__img {
+      flex: 1;
+      width: 130px;
+      height: 160px;
+      max-width: 130px;
+      max-height: 160px;
+      border-radius: 57% 43% 63% 37% / 56% 47% 53% 44%;
+      background-image: url("/src/assets/6. Stretching.jpg");
+      background-position: 50% 50%;
+      background-size: cover;
+    }
+    .section__text__container {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 5px;
+      .section__title {
+        font-family: $ff-secondary;
+        font-size: 1.4rem;
+        position: relative;
+        background-color: transparent;
+        span {
+          position: absolute;
+          bottom: 7px;
+          left: 0;
+          width: 100%;
+          height: 9px;
+          background-color: $clr-pink-700;
+          z-index: -1;
+        }
+      }
+      p {
+        font-size: 0.6rem;
+        line-height: 12px;
+      }
+      details.accordion {
+        cursor: pointer;
+        .accordion_title {
+          color: $clr-black;
+          font-size: 0.8rem;
+          list-style: none;
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+          gap: 5px;
+          transition: margin 150ms ease-out;
+          &:hover {
+            color: #000;
+          }
+        }
+        .accordion__icon {
+          color: $clr-black;
+          transition: transform 0.3s ease;
+        }
+        .accordion_text {
+          padding: 0px 0px 5px 20px;
+        }
+      }
+      details[open] .accordion_title {
+        margin-bottom: 10px;
+      }
+      details[open].accordion .accordion__icon {
+        transform: rotate(90deg);
+      }
+      .section__menu__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding-top: 8px;
+        gap: 5px;
+        .menu__container {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: flex-start;
+          gap: 5px;
+          .section__menu {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 2px;
+            .menu__icon {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              cursor: pointer;
+              transition: 0.3s ease-in-out;
+            }
+            .openMenu {
+              transform: rotate(90deg);
+            }
+            h4 {
+              font-family: $ff-secondary;
+              font-size: 0.8rem;
+              font-weight: 400;
+              margin: 0;
+            }
+          }
+          .section__text {
+            width: 100%;
+            padding-left: 20px;
+            height: 0;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0s;
+          }
+          .openMenu {
+            height: auto;
+            opacity: 1;
+            visibility: visible;
+            transition: all 0.3s ease;
+          }
+        }
+      }
+      .btn-primary {
+        margin-top: 5px;
+      }
+      .service__appointment{
+        color: $clr-black;
+        font-family: $ff-secondary;
+        margin-bottom: 2px;
+      }
+      .service__author{
+        color: $clr-black;
+        font-family: $ff-secondary;
+        font-style: italic;
+      }
+    }
+  }
+  .pilatesMat {
+    flex-direction: row-reverse;
+    .section__img {
+      width: 180px;
+      height: 130px;
+      max-width: 180px;
+      max-height: 130px;
+      border-radius: 40% 60% 59% 41% / 51% 49% 51% 49%;
+      background-image: url("/src/assets/pareja-senior-activa-enfocada-practicando-yoga-juntos.jpg");
+    }
+  }
+  .stretchingRestaurativo {
+    .section__title {
+      width: fit-content;
+    }
+    .section__img {
+      width: 150px;
+      height: 150px;
+      max-width: 150px;
+      max-height: 150px;
+      border-radius: 70% 30% 75% 25% / 51% 49% 51% 49%;
+      background-image: url("/src/assets/mujeres-embarazadas-haciendo-yoga-prenatal-curvatura-pose-janu-sirsasana.jpg");
+    }
+  }
+  .bienestarEmpresas {
+    flex-direction: row-reverse;
+    .section__title {
+      width: fit-content;
+    }
+    .section__img {
+      width: 150px;
+      height: 150px;
+      max-width: 150px;
+      max-height: 150px;
+      border-radius: 58% 42% 65% 35% / 39% 38% 62% 61% ;
+      background-image: url("/src/assets/empresario-alivia-estres-laboral-meditacion.jpg");
+    }
+  }
+}
