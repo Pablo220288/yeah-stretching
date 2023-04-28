@@ -1,6 +1,7 @@
 import { NavLink } from "react-router-dom";
 import logo from "../../assets/logo 2.svg";
 import { useState } from "react";
+import { Footer } from "../Footer";
 
 export const Navbar = () => {
   const [open, setOpen] = useState("");
@@ -14,8 +15,8 @@ export const Navbar = () => {
   return (
     <>
       <nav className="navbar__container">
-        <NavLink className="navbar__logo" to="/home">
-          <img src={logo} alt="yeha stretching logo" />
+        <NavLink className={`navbar__logo ${open}`} to="/home">
+          <img className="logo__nav" src={logo} alt="yeha stretching logo" />
         </NavLink>
         <div className="navbar__link__container">
           <NavLink className="navbar__link" to="/home">
@@ -44,18 +45,23 @@ export const Navbar = () => {
       </nav>
       <nav className="navbar__mobile">
         <div className={`navbar__mobile__container ${open}`}>
-          <NavLink className="navbar__link" to="/home" onClick={closeMenu}>
-            Home
-          </NavLink>
-          <NavLink className="navbar__link" to="/about" onClick={closeMenu}>
-            Sobre Mi
-          </NavLink>
-          <NavLink className="navbar__link" to="/service" onClick={closeMenu}>
-            Servicios
-          </NavLink>
-          <NavLink className="navbar__link" to="/contact" onClick={closeMenu}>
-            Conacto
-          </NavLink>
+          <div className="mobile__link">
+            <NavLink className="navbar__link" to="/home" onClick={closeMenu}>
+              Home
+            </NavLink>
+            <NavLink className="navbar__link" to="/about" onClick={closeMenu}>
+              Sobre Mi
+            </NavLink>
+            <NavLink className="navbar__link" to="/service" onClick={closeMenu}>
+              Servicios
+            </NavLink>
+            <NavLink className="navbar__link" to="/contact" onClick={closeMenu}>
+              Conacto
+            </NavLink>
+          </div>
+          <div className="footer_nav">
+            <Footer />
+          </div>
         </div>
       </nav>
     </>
