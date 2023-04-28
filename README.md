@@ -1,7 +1,7 @@
 
 #Commit types
 
- **init** se usa para describir la creación inicial de un repositorio o la inicialización de un nuevo proyecto. Por lo general, solo se usa una vez al comienzo del proyecto.
+**init** Describir la creación inicial de un repositorio o la inicialización de un nuevo proyecto. Por lo general, solo se usa una vez al comienzo del proyecto.
 
 **feat** Agregar característica de carga de imagen de perfil de usuario
 

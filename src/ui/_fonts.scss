@@ -1,3 +1,12 @@
+@font-face {
+    font-family: 'chapazaregular';
+    src: url('../assets/fonts/chapaza_regular_400-webfont.woff2') format('woff2'),
+        url('../assets/fonts/chapaza_regular_400-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
 $ff-primary: 'Louis George Café', sans-serif;
 $ff-primary-light: 'Louis George Café Light', sans-serif;
-$ff-secondary: 'chapaza-regular';
+$ff-secondary: 'chapazaregular';
