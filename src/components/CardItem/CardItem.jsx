@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { Button } from '../Button';
 
 export const CardItem = ( { servicio } ) => {
@@ -18,7 +19,9 @@ export const CardItem = ( { servicio } ) => {
                     ) )}
                 </div>
             </div>
-            <Button className="btn-primary mt-2">más info &gt;</Button>
+            <Link to='/service' className="btn-primary__card mt-2">
+                más info &gt;
+            </Link>
         </div>
     );
 };

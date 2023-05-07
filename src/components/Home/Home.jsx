@@ -3,12 +3,7 @@ import { CardContainer } from '../CardContainer';
 import global from '../../utils/global.json';
 import { Reviews } from '../Reviews/Reviews';
 import { BiHeart } from "react-icons/bi";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Grid, Pagination, Navigation } from "swiper";
-import "swiper/css";
-import "swiper/css/grid";
-import "swiper/css/pagination";
-import "swiper/css/navigation";
+
 
 export const Home = () => {
     return (
@@ -78,7 +73,7 @@ export const Home = () => {
                 <div className='empresa__container'>
                     <div className='ps-2 mb-3 mt-2'>
                         <h2>Si tenés una Empresa,</h2>
-                        <p className='empresa__text mb-2'>Invertí en la salud y bienestar corporativo para permitir que tu capital humano y empresarial se vea mejorado</p>
+                        <p className='empresa__text--s mb-2'>Invertí en la salud y bienestar corporativo para permitir que tu capital humano y empresarial se vea mejorado</p>
                         <Button
                             className='btn-primary'
                         >
@@ -96,27 +91,22 @@ export const Home = () => {
                 </div>
             </section>
 
-            {/* <section className='reviews__container'>
+            <section className='reviews__container'>
                 <div>
                     <div className='reviews__container'>
                         <h2 className=' text__highlight servicios__title'>&nbsp;Reviews&nbsp;<span
                             className='text__highlight--icon'>
                             <BiHeart />
                         </span>&nbsp;&nbsp;</h2>
-                        <p className='empresa__text mb-2'>Las opiniones, valoraciones o testimonios de nuestros clientes nos importan ¡y mucho!</p>
+                        <p className='empresa__text--c mb-2'>Las opiniones, valoraciones o testimonios de nuestros clientes nos importan ¡y mucho!</p>
                     </div>
 
 
 
                     <div className='empresa__img'>
-                        <img
-                            className='empresa__img'
-                            src="https://res.cloudinary.com/ferjen/image/upload/v1683434043/yeah_stretching/clases/4-Stretching_oficina_pnalh4.jpg"
-                            alt="Mujer sentada en silla en la oficina, estirando los brazos, haciendo stretching"
-                        />
+                        <Reviews global={global} />
                     </div>
 
-                    <Reviews global={global} />
 
                 </div>
                 <button className='btn-secondary'>
@@ -125,7 +115,7 @@ export const Home = () => {
                         que te sobre disciplina</h3>
                 </button>
 
-            </section> */}
+            </section>
         </>
     )
 };

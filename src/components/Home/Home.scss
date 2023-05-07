@@ -209,7 +209,16 @@ h5 {
         margin-top: 0.5rem;
         font-size: 0.9rem;
         width: calc(90vw - 3rem);
-        text-align: center;
+
+        &--c {
+            @extend .empresa__text;
+            text-align: center;
+        }
+
+        &--s {
+            @extend .empresa__text;
+            text-align: start;
+        }
     }
 
     .servicios__container {

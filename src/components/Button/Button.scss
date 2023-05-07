@@ -14,6 +14,23 @@
     cursor: pointer;
 }
 
+.btn-primary__card {
+    all: unset;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: $clr-pink-700;
+    color: $clr-black;
+    font-family: $ff-primary;
+    font-size: 0.85rem;
+    padding: 1em 1.5em;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: end;
+    align-items: center;
+    cursor: pointer;
+}
+
 .btn-secondary {
     all: unset;
     background-color: $clr-pink-700;
