@@ -1,12 +1,17 @@
 @font-face {
-    font-family: 'chapazaregular';
-    src: url('../assets/fonts/chapaza_regular_400-webfont.woff2') format('woff2'),
-        url('../assets/fonts/chapaza_regular_400-webfont.woff') format('woff');
+    font-family: 'Chapaza';
+    src: url('../assets/fonts/Chapaza-Regular.eot');
+    src: url('../assets/fonts/Chapaza-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../assets/fonts/Chapaza-Regular.woff2') format('woff2'),
+        url('../assets/fonts/Chapaza-Regular.woff') format('woff'),
+        url('../assets/fonts/Chapaza-Regular.ttf') format('truetype'),
+        url('../assets/fonts/Chapaza-Regular.svg#Chapaza-Regular') format('svg');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 
 
 $ff-primary: 'Louis George Café', sans-serif;
 $ff-primary-light: 'Louis George Café Light', sans-serif;
-$ff-secondary: 'chapazaregular';
+$ff-secondary: 'Chapaza', serif;

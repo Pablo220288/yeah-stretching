@@ -4,8 +4,13 @@
     background-color: $clr-pink-700;
     color: $clr-black;
     font-family: $ff-primary;
-    font-size: 0.6rem;
+    font-size: 0.85rem;
     padding: 0.4em 0.7em;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
     cursor: pointer;
 }
 

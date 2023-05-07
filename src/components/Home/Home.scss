@@ -3,7 +3,19 @@
     position: relative;
     flex-direction: column;
     overflow-x: hidden;
-    margin-top: 50px;
+    margin-top: 2.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    width: calc(100vw - 2rem);
+}
+
+.heroEmpresa__container {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    overflow-x: hidden;
+    margin-top: 2.5rem;
+    width: calc(100vw - 2rem);
 }
 
 .subsection {
@@ -12,36 +24,38 @@
 }
 
 .hero__title {
-    width: 80%;
-    margin-left: 1rem;
+    width: 70%;
     margin-bottom: 0;
 
     &--mt {
         display: flex;
         flex-direction: column;
         margin-top: 2.8rem;
-        margin-left: 1rem;
+    }
+
+    &--b {
+        font-weight: 800;
     }
 }
 
 .hero__image {
     margin-top: 2.5rem;
-    margin-right: 1.5rem;
+    // margin-right: 1.5rem;
     width: 10rem;
     align-self: end;
     z-index: -1;
 }
 
 .hero__icon-arrow {
-    width: 1rem;
-    height: 1rem;
+    width: 1.2rem;
+    height: 1.2rem;
     margin: 1.5rem 0;
 }
 
 h2 {
     font-family: $ff-secondary;
-    font-size: 1rem;
-    font-weight: 400;
+    font-size: 1.2rem;
+    font-weight: 500;
     color: $clr-black;
     margin: 0;
     padding: 0;
@@ -72,7 +86,7 @@ h5 {
     position: absolute;
     align-self: flex-start;
     width: 100%;
-    top: 0;
+    top: 24px;
     margin-top: 0;
     padding: 0;
     z-index: -1;
@@ -88,12 +102,177 @@ h5 {
 }
 
 .servicios__container {
+    align-items: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    text-align: center;
+    padding: 0;
+    margin: 0;
+    width: 300px;
 }
 
 .servicios__title {
     margin-top: 2rem;
+}
+
+/* Smallest screens (up to 390px) */
+@media only screen and (max-width: 390px) {
+
+    .hero__container {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        align-items: center;
+        overflow-x: hidden;
+        margin-top: 2.5rem;
+        // padding-left: 1rem;
+        padding-right: 0.1rem;
+        width: calc(100vw - 1rem);
+    }
+
+    .heroEmpresa__container {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        align-items: center;
+        overflow-x: hidden;
+        margin-top: 2.5rem;
+        width: 100vw;
+        background-color: $clr-grey-600;
+    }
+
+    h2 {
+        font-size: 1.4rem;
+    }
+
+    h4 {
+        margin: 0.8rem 0;
+        font-size: 0.9rem;
+    }
+
+    h5 {
+        font-size: 0.8rem;
+    }
+
+    .hero__title {
+        width: 80vw;
+        margin-right: 1.5rem;
+
+        &--mt {
+            margin-top: 3.5rem;
+
+        }
+    }
+
+    .hero__image {
+        margin-top: 4.5rem;
+        // margin-right: 1rem;
+        align-self: center;
+        width: 12rem;
+    }
+
+    .hero__icon-arrow {
+        margin-top: 1.2rem;
+        margin-bottom: 2.2rem;
+    }
+
+    .empresa__container {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+        width: 300px;
+
+    }
+
+    .servicios__container {
+        color: $clr-black;
+        // comment
+    }
+
+    .empresa__img {
+        width: 100vw;
+        height: auto;
+    }
+
+    .empresa__title {
+        justify-content: start;
+    }
+}
+
+
+/* Small screens (up to 576px) */
+@media only screen and (min-width: 391px) and (max-width: 576) {
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    h4 {
+        margin: 0.8rem 0;
+        font-size: 0.9rem;
+    }
+
+    h5 {
+        font-size: 0.8rem;
+    }
+
+    .hero__title {
+        width: 90%;
+        font-size: 2rem;
+        margin-left: 1.5rem;
+
+        &--mt {
+            margin-top: 3.5rem;
+            margin-left: 1.5rem;
+        }
+    }
+
+    .hero__image {
+        margin-top: 4.5rem;
+        margin-right: 2.8rem;
+        align-self: center;
+        width: 13rem;
+    }
+
+    .hero__icon-arrow {
+        margin-top: 1.2rem;
+        margin-bottom: 2.2rem;
+    }
+
+    .servicios__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .empresa__img {
+        width: 320px;
+        height: auto;
+        background-color: $clr-grey-600;
+    }
+}
+
+
+/* Medium screens (576px to 768px) */
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+    /* Your CSS code for medium screens here */
+}
+
+/* Large screens (768px to 992px) */
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+    /* Your CSS code for large screens here */
+}
+
+/* Extra-large screens (992px to 1200px) */
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
+    /* Your CSS code for extra-large screens here */
+}
+
+/* XXL screens (above 1201px) */
+@media only screen and (min-width: 1201px) {
+    /* Your CSS code for XXL screens here */
 }
