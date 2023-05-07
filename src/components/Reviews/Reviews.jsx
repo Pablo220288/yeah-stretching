@@ -8,39 +8,46 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import galleryImage from "../../utils/galleryImage";
 
+
 import { ReviewsItem } from '../ReviewsItem/ReviewsItem';
+import { Breakpoints } from '../Breakpoints/Breakpoints';
 
 export const Reviews = ( { global } ) => {
 
     const reviews = Array.isArray( global.reviews ) ? global.reviews : [];
 
     return (
+        <>
+            <Breakpoints at="xs">
+                <div className="reviews-container">
 
-        <div className="reviews-container">
+                    <Swiper
+                        slidesPerView={2}
+                        spaceBetween={100}
+                        loop={true}
+                        pagination={{
+                            dynamicBullets: true,
+                        }}
 
-            <Swiper
-                slidesPerView={2}
-                spaceBetween={100}
-                loop={true}
-                pagination={{
-                    // clickable: true,
-                    dynamicBullets: true,
-                }}
+                        modules={[ Grid, Pagination, Navigation ]}
+                        className="mySwiper"
+                    >
+                        {
+                            reviews.map( ( review, index ) => {
+                                return (
 
-                modules={[ Grid, Pagination, Navigation ]}
-                className="mySwiper"
-            >
-                {
-                    reviews.map( ( review, index ) => {
-                        return (
-
-                            <SwiperSlide key={index}>
-                                <ReviewsItem key={index} review={{ id: index, ...review }} />
-                            </SwiperSlide>
-                        )
-                    } )
-                }
-            </Swiper>
-        </div>
+                                    <SwiperSlide key={index}>
+                                        <ReviewsItem
+                                            key={index}
+                                            review={{ id: index, ...review }}
+                                        />
+                                    </SwiperSlide>
+                                )
+                            } )
+                        }
+                    </Swiper>
+                </div>
+            </Breakpoints>
+        </>
     );
 };
