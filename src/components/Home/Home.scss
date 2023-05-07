@@ -11,11 +11,10 @@
 
 .heroEmpresa__container {
     display: flex;
-    position: relative;
     flex-direction: column;
     overflow-x: hidden;
     margin-top: 2.5rem;
-    width: calc(100vw - 2rem);
+    width: 100vw;
 }
 
 .subsection {
@@ -82,6 +81,20 @@ h5 {
     padding: 0;
 }
 
+.text__highlight--white {
+    background: rgb(255, 255, 255);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 10%, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 0) 90%);
+    display: inline-block;
+    text-align: center;
+    padding: 0;
+}
+
+.text__highlight--icon {
+    margin: 0;
+    padding: 0;
+    width: 1rem;
+}
+
 .hero__curve {
     position: absolute;
     align-self: flex-start;
@@ -106,13 +119,16 @@ h5 {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     padding: 0;
     margin: 0;
     width: 300px;
 }
 
 .servicios__title {
-    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 /* Smallest screens (up to 390px) */
@@ -134,7 +150,7 @@ h5 {
         display: flex;
         position: relative;
         flex-direction: column;
-        align-items: center;
+        align-items: start;
         overflow-x: hidden;
         margin-top: 2.5rem;
         width: 100vw;
@@ -180,11 +196,20 @@ h5 {
         align-items: center;
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        padding: 0;
-        margin: 0;
-        width: 300px;
+        justify-content: start;
+        align-items: start;
+        // width: 300px;
+    }
 
+    .empresa__text {
+        font-family: $ff-primary;
+        padding: 0;
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 0.5rem;
+        font-size: 0.9rem;
+        width: calc(90vw - 3rem);
+        text-align: center;
     }
 
     .servicios__container {
@@ -197,8 +222,17 @@ h5 {
         height: auto;
     }
 
-    .empresa__title {
-        justify-content: start;
+    .reviews__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .svgIcon {
+        width: 100%;
+        height: 100%;
     }
 }
 

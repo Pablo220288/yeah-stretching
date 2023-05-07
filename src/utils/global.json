@@ -34,5 +34,37 @@
             "altTxt": "Stretching Restaurativo",
             "imgUrl": "https://res.cloudinary.com/ferjen/image/upload/v1683072978/yeah_stretching/clases/3-Stretching_foiygw.jpg"
         }
+    ],
+    "reviews": [
+        {
+            "id": 1,
+            "user": "JUAN PABLO",
+            "comment": "Es un placer compartir las clases con personas agradables y buena onda."
+        },
+        {
+            "id": 2,
+            "user": "JULIETA",
+            "comment": "Siempre ocupándote de ver cómo cada uno lo hace y en qué se puede mejorar las posturas y molestias."
+        },
+        {
+            "id": 3,
+            "user": "EUGENIA",
+            "comment": "Excelencia profesional y excelente calidad humana."
+        },
+        {
+            "id": 4,
+            "user": "KARINA",
+            "comment": "Sentir que puedo hablar con vos y buscar alternativas me hace sentir mejor y hace que sea más saludable la relación con mi cuerpo."
+        },
+        {
+            "id": 5,
+            "user": "LUCILA",
+            "comment": "Mi espalda es Yami dependiente."
+        },
+        {
+            "id": 6,
+            "user": "JOAQUIN",
+            "comment": "Tus clases son geniales, duermo mucho mejor ese día y mi cuerpo lo agradece."
+        }
     ]
 }

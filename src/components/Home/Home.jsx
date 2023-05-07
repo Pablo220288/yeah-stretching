@@ -1,6 +1,14 @@
 import { Button } from "../Button";
 import { CardContainer } from '../CardContainer';
 import global from '../../utils/global.json';
+import { Reviews } from '../Reviews/Reviews';
+import { BiHeart } from "react-icons/bi";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Grid, Pagination, Navigation } from "swiper";
+import "swiper/css";
+import "swiper/css/grid";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
 
 export const Home = () => {
     return (
@@ -65,13 +73,19 @@ export const Home = () => {
                     </div>
                 </div>
             </section>
-            <section className='heroEmpresa__container'>
+            <section className='heroEmpresa__container mb-3'>
 
-                <header>
-                    <h2 className='empresa__title'>Si tenés una Empresa,</h2>
-                </header>
                 <div className='empresa__container'>
-                    <p className='mb-3'>Invertí en la salud y bienestar corporativo para permitir que tu capital humano y empresarial se vea mejorado</p>
+                    <div className='ps-2 mb-3 mt-2'>
+                        <h2>Si tenés una Empresa,</h2>
+                        <p className='empresa__text mb-2'>Invertí en la salud y bienestar corporativo para permitir que tu capital humano y empresarial se vea mejorado</p>
+                        <Button
+                            className='btn-primary'
+                        >
+                            Quiero saber más &gt;
+                        </Button>
+                    </div>
+
                     <div className='empresa__img'>
                         <img
                             className='empresa__img'
@@ -82,10 +96,18 @@ export const Home = () => {
                 </div>
             </section>
 
-            <section className='heroEmpresa__container'>
-                <div className='empresa__container'>
-                    <h2 className='servicios__title'><span className='text__highlight'>{`Servicios que podés elegir :)`}</span></h2>
-                    <h5 className='mb-3'>Súmate a nuevas experiencias</h5>
+            {/* <section className='reviews__container'>
+                <div>
+                    <div className='reviews__container'>
+                        <h2 className=' text__highlight servicios__title'>&nbsp;Reviews&nbsp;<span
+                            className='text__highlight--icon'>
+                            <BiHeart />
+                        </span>&nbsp;&nbsp;</h2>
+                        <p className='empresa__text mb-2'>Las opiniones, valoraciones o testimonios de nuestros clientes nos importan ¡y mucho!</p>
+                    </div>
+
+
+
                     <div className='empresa__img'>
                         <img
                             className='empresa__img'
@@ -93,8 +115,18 @@ export const Home = () => {
                             alt="Mujer sentada en silla en la oficina, estirando los brazos, haciendo stretching"
                         />
                     </div>
+
+                    <Reviews global={global} />
+
                 </div>
-            </section>
+                <button className='btn-secondary'>
+                    <h3>Cuando te falte motivación,</h3>
+                    <h3 className='text__highlight--white'>
+                        que te sobre disciplina</h3>
+                </button>
+
+            </section> */}
         </>
     )
 };
+
