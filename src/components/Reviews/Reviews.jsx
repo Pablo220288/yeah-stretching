@@ -21,8 +21,10 @@ export const Reviews = ( { global } ) => {
             <Swiper
                 slidesPerView={2}
                 spaceBetween={100}
+                loop={true}
                 pagination={{
-                    clickable: true,
+                    // clickable: true,
+                    dynamicBullets: true,
                 }}
 
                 modules={[ Grid, Pagination, Navigation ]}
