@@ -1,3 +1,91 @@
+.card-container {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+        "image"
+        "title"
+        "button";
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0;
+    width: 300px;
+    height: 340px;
+    border-radius: 20px;
+    background-color: white;
+    object-fit: contain;
+    overflow: hidden;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+.card-container img {
+    grid-area: image;
+    width: auto;
+    height: 220px;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    text-align: center;
+}
+
+.card-container .card-servicios {
+    grid-area: title;
+    height: 70px;
+    color: $clr-black;
+    font-size: 1.2rem;
+    text-align: start;
+    font-family: $ff-secondary;
+}
+
+.card-servicios h3 {
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 0.2rem 1rem;
+    margin-top: 0.4rem;
+    margin-bottom: 0.5rem;
+}
+
+.servicios-pill__container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+.servicios-pill {
+    font-size: 0.7rem;
+    background-color: $clr-grey-600;
+    font-family: $ff-primary;
+    padding: 0.25rem 0.5rem 0.3rem 0.5rem;
+    border-radius: 15px;
+    font-weight: 600;
+}
+
+.card-container button {
+    grid-area: button;
+    height: 2.7rem;
+    padding: 0 1rem;
+    margin: 0;
+    background-color: $clr-pink-700;
+    color: $clr-black;
+    border: none;
+    justify-content: end;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+.card-container__image {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: 220px;
+    background-color: $clr-pink-800;
+    overflow: hidden;
+}
+
 /* Smallest screens (up to 390px) */
 @media only screen and (max-width: 390px) {
 
@@ -36,6 +124,7 @@
         color: $clr-black;
         font-size: 1.2rem;
         text-align: start;
+        font-family: $ff-secondary;
     }
 
     .card-servicios h3 {
@@ -90,7 +179,169 @@
 }
 
 /* Small screens (391px to 576px) */
-@media only screen and (min-width: 391px) and (max-width: 576) {
+// @media only screen and (min-width: 391px) and (max-width: 576) {
+
+//     .card-container {
+//         display: grid;
+//         grid-template-rows: 1fr 1fr 1fr;
+//         grid-template-areas:
+//             "image"
+//             "title"
+//             "button";
+//         align-items: center;
+//         justify-content: center;
+//         margin: 1rem 2rem;
+//         width: 350px;
+//         height: 460px;
+//         border-radius: 30px;
+//         background-color: white;
+//         object-fit: contain;
+//         overflow: hidden;
+//         box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+//     }
+
+//     .card-container img {
+//         grid-area: image;
+//         height: 270px;
+//     }
+
+//     .card-container .card-servicios {
+//         grid-area: title;
+//         height: 150px;
+//         color: $clr-black;
+//         font-size: 1.2rem;
+//         font-weight: 400;
+//         margin: 0;
+//         text-align: start;
+//     }
+
+//     .servicios-pill {
+//         font-size: 0.8rem;
+//         background-color: $clr-grey-600;
+//         font-family: $ff-primary;
+//         padding: 0.5rem;
+//     }
+
+//     .card-container button {
+//         grid-area: button;
+//         padding: 1rem 1.5rem;
+//         background-color: $clr-pink-700;
+//         color: $clr-black;
+//         border: none;
+//         justify-content: end;
+//         text-align: end;
+//         font-size: 0.9rem;
+//         cursor: pointer;
+//     }
+
+//     .card-container__image {
+//         width: 350px;
+//         height: 270px;
+//         background-color: $clr-pink-800;
+//         overflow: hidden;
+//     }
+
+
+//     .card {
+//         height: 270px;
+//     }
+
+// }
+
+@media only screen and (min-width: 391px) and (max-width: 576px) {
+    .card-container {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas:
+            "image"
+            "title"
+            "button";
+        align-items: center;
+        justify-content: center;
+        margin: 1.5rem 0;
+        width: 300px;
+        height: 340px;
+        border-radius: 20px;
+        background-color: white;
+        object-fit: contain;
+        overflow: hidden;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    }
+
+    .card-container img {
+        grid-area: image;
+        width: auto;
+        height: 220px;
+        justify-content: center;
+        align-items: center;
+        align-self: center;
+        text-align: center;
+    }
+
+    .card-container .card-servicios {
+        grid-area: title;
+        height: 70px;
+        color: $clr-black;
+        font-size: 1.2rem;
+        text-align: start;
+        font-family: $ff-secondary;
+    }
+
+    .card-servicios h3 {
+        font-size: 1.2rem;
+        font-weight: 500;
+        padding: 0.2rem 1rem;
+        margin-top: 0.4rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .servicios-pill__container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 5px;
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+    }
+
+    .servicios-pill {
+        font-size: 0.7rem;
+        background-color: $clr-grey-600;
+        font-family: $ff-primary;
+        padding: 0.25rem 0.5rem 0.3rem 0.5rem;
+        border-radius: 15px;
+        font-weight: 600;
+    }
+
+    .card-container button {
+        grid-area: button;
+        height: 2.7rem;
+        padding: 0 1rem;
+        margin: 0;
+        background-color: $clr-pink-700;
+        color: $clr-black;
+        border: none;
+        justify-content: end;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        font-size: 0.9rem;
+        cursor: pointer;
+    }
+
+    .card-container__image {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        height: 220px;
+        background-color: $clr-pink-800;
+        overflow: hidden;
+    }
+}
+
+
+
+/* Medium screens (577px to 768px) */
+@media only screen and (min-width: 577px) and (max-width: 768px) {
 
     .card-container {
         display: grid;
@@ -101,73 +352,180 @@
             "button";
         align-items: center;
         justify-content: center;
-        margin: 1rem 2rem;
-        width: 350px;
-        height: 460px;
-        border-radius: 30px;
+        margin: 2rem 0;
+        width: 300px;
+        height: 340px;
+        border-radius: 20px;
         background-color: white;
         object-fit: contain;
         overflow: hidden;
         box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
-        // height: calc((100vh - 200px) / 3 - 20px);
     }
 
     .card-container img {
         grid-area: image;
-        height: 270px;
+        width: auto;
+        height: 220px;
+        justify-content: center;
+        align-items: center;
+        align-self: center;
+        text-align: center;
     }
 
     .card-container .card-servicios {
         grid-area: title;
-        height: 150px;
+        height: 70px;
         color: $clr-black;
         font-size: 1.2rem;
-        font-weight: 400;
-        margin: 0;
         text-align: start;
+        font-family: $ff-secondary;
+    }
+
+    .card-servicios h3 {
+        font-size: 1.2rem;
+        font-weight: 500;
+        padding: 0.2rem 1rem;
+        margin-top: 0.4rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .servicios-pill__container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 5px;
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
     }
 
     .servicios-pill {
-        font-size: 0.8rem;
+        font-size: 0.7rem;
         background-color: $clr-grey-600;
         font-family: $ff-primary;
-        padding: 0.5rem;
+        padding: 0.25rem 0.5rem 0.3rem 0.5rem;
+        border-radius: 15px;
+        font-weight: 600;
     }
 
     .card-container button {
         grid-area: button;
-        padding: 1rem 1.5rem;
+        height: 2.7rem;
+        padding: 0 1rem;
+        margin: 0;
         background-color: $clr-pink-700;
         color: $clr-black;
         border: none;
         justify-content: end;
-        text-align: end;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
         font-size: 0.9rem;
         cursor: pointer;
     }
 
     .card-container__image {
-        width: 350px;
-        height: 270px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        height: 220px;
         background-color: $clr-pink-800;
         overflow: hidden;
     }
-
-
-    .card {
-        height: 270px;
-    }
-
-}
-
-/* Medium screens (577px to 768px) */
-@media only screen and (min-width: 577px) and (max-width: 768px) {
-    /* Your CSS code for medium screens here */
 }
 
 /* Large screens (769px to 992px) */
 @media only screen and (min-width: 769px) and (max-width: 992px) {
-    /* Your CSS code for large screens here */
+    .cards-container {
+        display: flex;
+        gap: 20px;
+    }
+
+    .card-container {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas:
+            "image"
+            "title"
+            "button";
+        align-items: center;
+        justify-content: center;
+        margin: 1rem 0;
+        width: 230px;
+        height: 320px;
+        border-radius: 20px;
+        background-color: white;
+        object-fit: contain;
+        overflow: hidden;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    }
+
+    .card-container img {
+        grid-area: image;
+        width: auto;
+        height: 170px;
+        justify-content: center;
+        align-items: flex-start;
+        align-self: flex-start;
+        text-align: center;
+    }
+
+    .card-container .card-servicios {
+        grid-area: title;
+        height: 100px;
+        color: $clr-black;
+        font-size: 1rem;
+        text-align: start;
+        font-family: $ff-secondary;
+    }
+
+    .card-servicios h3 {
+        font-size: 0.8rem;
+        font-weight: 500;
+        padding: 0.2rem 1rem;
+        margin-top: 0.4rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .servicios-pill__container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 5px;
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+    }
+
+    .servicios-pill {
+        font-size: 0.6rem;
+        background-color: $clr-grey-600;
+        font-family: $ff-primary;
+        padding: 0.25rem 0.5rem 0.3rem 0.5rem;
+        border-radius: 15px;
+        font-weight: 600;
+    }
+
+    .card-container button {
+        grid-area: button;
+        height: 5rem;
+        padding: 0 1rem;
+        margin: 0;
+        background-color: $clr-pink-700;
+        color: $clr-black;
+        border: none;
+        justify-content: end;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        font-size: 0.9rem;
+        cursor: pointer;
+    }
+
+    .card-container__image {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        height: 170px;
+        background-color: $clr-pink-800;
+        overflow: hidden;
+    }
 }
 
 /* Extra-large screens (992px to 1200px) */

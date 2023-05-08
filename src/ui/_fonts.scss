@@ -1,11 +1,10 @@
 @font-face {
     font-family: 'Chapaza';
-    src: url('../assets/fonts/Chapaza-Regular.eot');
-    src: url('../assets/fonts/Chapaza-Regular.eot?#iefix') format('embedded-opentype'),
-        url('../assets/fonts/Chapaza-Regular.woff2') format('woff2'),
-        url('../assets/fonts/Chapaza-Regular.woff') format('woff'),
-        url('../assets/fonts/Chapaza-Regular.ttf') format('truetype'),
-        url('../assets/fonts/Chapaza-Regular.svg#Chapaza-Regular') format('svg');
+    src: url('https://res.cloudinary.com/ferjen/raw/upload/v1683509150/yeah_stretching/fonts/Chapaza-Regular_euibcs.eot');
+    src: url('https://res.cloudinary.com/ferjen/raw/upload/v1683509150/yeah_stretching/fonts/Chapaza-Regular_euibcs.eot?#iefix') format('embedded-opentype'),
+        url('https://res.cloudinary.com/ferjen/raw/upload/v1683509150/yeah_stretching/fonts/Chapaza-Regular_q1l1wl.woff2') format('woff2'),
+        url('https://res.cloudinary.com/ferjen/raw/upload/v1683509150/yeah_stretching/fonts/Chapaza-Regular_zgpvph.woff') format('woff'),
+        url('https://res.cloudinary.com/ferjen/raw/upload/v1683509151/yeah_stretching/fonts/Chapaza-Regular_ubcwsd.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -15,3 +14,11 @@
 $ff-primary: 'Louis George Café', sans-serif;
 $ff-primary-light: 'Louis George Café Light', sans-serif;
 $ff-secondary: 'Chapaza', serif;
+
+.ff-primary {
+    font-family: $ff-primary;
+}
+
+.ff-secondary {
+    font-family: $ff-secondary;
+}

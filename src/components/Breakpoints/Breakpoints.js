@@ -1,11 +1,9 @@
 
 
-
-
 import useBreakpoints from "../../utils/breakpoints";
 
 
-export const Breakpoints = ( { at, children } ) => {
+export const Breakpoint = ( { at, children } ) => {
     if ( !at ) {
         console.error( "<Breakpoint>: must specify a breakpoint for the `at` prop." );
     }
