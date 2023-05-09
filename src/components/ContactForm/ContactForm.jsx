@@ -7,8 +7,6 @@ import { GrLinkedinOption, GrInstagram } from "react-icons/gr";
 import { ImWhatsapp } from "react-icons/im";
 import Swal from 'sweetalert2'
 
-
-// import formBackground from "../../assets/form.png";
 import { Button } from "../Button";
 
 
@@ -54,12 +52,8 @@ export const ContactForm = () => {
     <>
       <div className="main__form">
         <div className="hero__form">
-          <img className="hero__img" src="https://res.cloudinary.com/ferjen/image/upload/v1683506741/yeah_stretching/icons/form-banner_jr5qlj.png" alt="Banner con ondas rosado" />
-          <img
-            className="hero__img--profe animate__animated animate__fadeIn"
-            src="https://res.cloudinary.com/ferjen/image/upload/v1683507797/yeah_stretching/profe/img-prof-04_bss5cv.png"
-            alt="Imagen de Profe Yamila sonriendo"
-          />
+          <img className="hero__img" src="https://res.cloudinary.com/ferjen/image/upload/v1683587895/yeah_stretching/icons/form_nuf5gx.png" alt="Banner con ondas rosado" />
+
           <div className="hero__text">
             <div className="text_title">
               <h2>

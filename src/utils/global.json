@@ -10,7 +10,7 @@
                 "Fuerza"
             ],
             "altTxt": "Imagen de clases de Pilates Mat",
-            "imgUrl": "https://res.cloudinary.com/ferjen/image/upload/v1683072994/yeah_stretching/clases/1-Pilates_Mat_gkamfx.jpg"
+            "imgUrl": "https://res.cloudinary.com/ferjen/image/upload/v1683589682/yeah_stretching/clases/1-Pilates_Mat_ovmlnk.jpg"
         },
         {
             "id": "clasesTwo",
@@ -21,7 +21,7 @@
                 "Flexibilidad"
             ],
             "altTxt": "Imagen de clases de Stretching",
-            "imgUrl": "https://res.cloudinary.com/ferjen/image/upload/v1683072998/yeah_stretching/clases/2-Stretching_qq3qwt.jpg"
+            "imgUrl": "https://res.cloudinary.com/ferjen/image/upload/v1683589682/yeah_stretching/clases/2-Stretching_phekux.jpg"
         },
         {
             "id": "clasesThree",
@@ -32,7 +32,7 @@
                 "Relajación"
             ],
             "altTxt": "Stretching Restaurativo",
-            "imgUrl": "https://res.cloudinary.com/ferjen/image/upload/v1683072978/yeah_stretching/clases/3-Stretching_foiygw.jpg"
+            "imgUrl": "https://res.cloudinary.com/ferjen/image/upload/v1683589682/yeah_stretching/clases/3-Stretching_sludat.jpg"
         }
     ],
     "reviews": [

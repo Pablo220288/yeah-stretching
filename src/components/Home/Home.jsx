@@ -27,7 +27,7 @@ export const Home = () => {
                             <h2>el único lugar</h2>
                             <h2>donde se</h2>
                             <h2>puede vivir,</h2>
-                            <h2>
+                            <h2 className='section__title'>
                                 <span className='text__highlight'>cuida de él.</span>
                             </h2>
                             <img
@@ -53,12 +53,14 @@ export const Home = () => {
                                 className='hero__title--b'
                             > seguir activos y en movimiento, cuidando la salud de nuestro cuerpo y nuestra mente</span>, desde el hogar.
                             </h5>
+
                             <h5
                                 className='mt-1 mb-2'
                             >
                                 <span className='text__highlight text-bold'>¡Todos podemos y debemos hacer ejercicio!
                                 </span>
                             </h5>
+
                             <Button
                                 className='btn-primary'
                             >Conocé más sobre mi &gt;
@@ -79,7 +81,7 @@ export const Home = () => {
                             <h2>donde se</h2>
                             <h2>puede vivir,</h2>
                             <h2>
-                                <span className='text__highlight'>cuida de él.</span>
+                                <span className='text__highlight text-bold'>cuida de él.</span>
                             </h2>
                             <img
                                 className='hero__icon-arrow'
@@ -171,7 +173,58 @@ export const Home = () => {
                 </section >
             </Breakpoint>
 
-            <Breakpoint at="lg">
+            <Breakpoint at='lg'>
+                <section className='hero__container'>
+
+                    <div className='subsection'>
+                        <div className='hero__title--mt animate__animated animate__fadeInLeft'>
+                            <h2>Tu cuerpo es</h2>
+                            <h2>el único lugar</h2>
+                            <h2>donde se</h2>
+                            <h2>puede vivir,</h2>
+                            <h2>
+                                <span className='text__highlight'>cuida de él.</span>
+                            </h2>
+                            <img
+                                className='hero__icon-arrow'
+                                src="https://res.cloudinary.com/ferjen/image/upload/v1681962589/yeah_stretching/icons/ys-icon-down-arrow_bcbfv1.svg"
+                                alt="Icono con flecha" />
+                            <h2>Hola!</h2>
+
+                        </div>
+                        <div className='hero__image-container'>
+                            <img
+                                className='hero__image'
+                                src="https://res.cloudinary.com/ferjen/image/upload/v1682651967/yeah_stretching/profe/img-prof-01_cfiul0.png"
+                                alt="Profe Yamila" />
+                        </div>
+                    </div>
+
+                    <div className='subsection'>
+                        <div className='hero__title animate__animated animate__fadeInLeft'>
+                            <h2>Soy Yami Sayag</h2>
+                            <h4>Profe y creadora de Yeah Stretching</h4>
+                            <h5>Yeah comenzó en Marzo del 2021, surge como una alternativa online para <span
+                                className='hero__title--b'
+                            > seguir activos y en movimiento, cuidando la salud de nuestro cuerpo y nuestra mente</span>, desde el hogar.
+                            </h5>
+                            <h5
+                                className='mt-1 mb-2'
+                            >
+                                <span className='text__highlight text-bold'>¡Todos podemos y debemos hacer ejercicio!
+                                </span>
+                            </h5>
+                            <Button
+                                className='btn-primary'
+                            >Conocé más sobre mi &gt;
+                            </Button>
+                        </div>
+                    </div>
+
+                </section >
+            </Breakpoint>
+
+            {/* <Breakpoint at="lg">
 
                 <section className='hero__container'>
 
@@ -223,7 +276,7 @@ export const Home = () => {
 
                 </section >
 
-            </Breakpoint>
+            </Breakpoint> */}
 
             <section className='servicios__container'>
                 <h2 className='servicios__title  animate__animated animate__fadeInUp'>
@@ -250,7 +303,7 @@ export const Home = () => {
                 <div className='empresa__img'>
                     <img
                         className='empresa__img'
-                        src="https://res.cloudinary.com/ferjen/image/upload/v1683434043/yeah_stretching/clases/4-Stretching_oficina_pnalh4.jpg"
+                        src="https://res.cloudinary.com/ferjen/image/upload/v1683589683/yeah_stretching/clases/4-Stretching_de_oficina_t3aw4j.jpg"
                         alt="Mujer sentada en silla en la oficina, estirando los brazos, haciendo stretching"
                     />
                 </div>
