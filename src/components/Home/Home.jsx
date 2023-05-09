@@ -12,7 +12,7 @@ export const Home = () => {
             <div className='hero__curve'>
                 <img
                     className='hero__curve'
-                    src="https://res.cloudinary.com/ferjen/image/upload/v1681964673/yeah_stretching/icons/waves_qzsila.svg"
+                    src="https://res.cloudinary.com/ferjen/image/upload/v1683603824/yeah_stretching/icons/home-banner_wuqq1o.png"
                     alt="Imagen de curvas rosadas"
                 />
             </div>
@@ -37,12 +37,12 @@ export const Home = () => {
                             <h2>Hola!</h2>
 
                         </div>
-                        <div className='hero__image-container'>
+                        {/* <div className='hero__image-container'>
                             <img
                                 className='hero__image'
                                 src="https://res.cloudinary.com/ferjen/image/upload/v1682651967/yeah_stretching/profe/img-prof-01_cfiul0.png"
                                 alt="Profe Yamila" />
-                        </div>
+                        </div> */}
                     </div>
 
                     <div className='subsection'>
@@ -90,12 +90,12 @@ export const Home = () => {
                             <h2>Hola!</h2>
 
                         </div>
-                        <div className='hero__image-container'>
+                        {/* <div className='hero__image-container'>
                             <img
                                 className='hero__image'
                                 src="https://res.cloudinary.com/ferjen/image/upload/v1682651967/yeah_stretching/profe/img-prof-01_cfiul0.png"
                                 alt="Profe Yamila" />
-                        </div>
+                        </div> */}
                     </div>
 
                     <div className='subsection'>
@@ -141,12 +141,12 @@ export const Home = () => {
                             <h2>Hola!</h2>
 
                         </div>
-                        <div className='hero__image-container'>
+                        {/* <div className='hero__image-container'>
                             <img
                                 className='hero__image'
                                 src="https://res.cloudinary.com/ferjen/image/upload/v1682651967/yeah_stretching/profe/img-prof-01_cfiul0.png"
                                 alt="Profe Yamila" />
-                        </div>
+                        </div> */}
                     </div>
 
                     <div className='subsection'>
@@ -190,14 +190,8 @@ export const Home = () => {
                                 src="https://res.cloudinary.com/ferjen/image/upload/v1681962589/yeah_stretching/icons/ys-icon-down-arrow_bcbfv1.svg"
                                 alt="Icono con flecha" />
                             <h2>Hola!</h2>
+                        </div>
 
-                        </div>
-                        <div className='hero__image-container'>
-                            <img
-                                className='hero__image'
-                                src="https://res.cloudinary.com/ferjen/image/upload/v1682651967/yeah_stretching/profe/img-prof-01_cfiul0.png"
-                                alt="Profe Yamila" />
-                        </div>
                     </div>
 
                     <div className='subsection'>
@@ -224,8 +218,7 @@ export const Home = () => {
                 </section >
             </Breakpoint>
 
-            {/* <Breakpoint at="lg">
-
+            <Breakpoint at='xl'>
                 <section className='hero__container'>
 
                     <div className='subsection'>
@@ -244,7 +237,12 @@ export const Home = () => {
                             <h2>Hola!</h2>
 
                         </div>
-
+                        {/* <div className='hero__image-container'>
+                            <img
+                                className='hero__image'
+                                src="https://res.cloudinary.com/ferjen/image/upload/v1682651967/yeah_stretching/profe/img-prof-01_cfiul0.png"
+                                alt="Profe Yamila" />
+                        </div> */}
                     </div>
 
                     <div className='subsection'>
@@ -261,12 +259,6 @@ export const Home = () => {
                                 <span className='text__highlight text-bold'>¡Todos podemos y debemos hacer ejercicio!
                                 </span>
                             </h5>
-                            <div className='hero__image-container'>
-                                <img
-                                    className='hero__image'
-                                    src="https://res.cloudinary.com/ferjen/image/upload/v1682651967/yeah_stretching/profe/img-prof-01_cfiul0.png"
-                                    alt="Profe Yamila" />
-                            </div>
                             <Button
                                 className='btn-primary'
                             >Conocé más sobre mi &gt;
@@ -275,10 +267,62 @@ export const Home = () => {
                     </div>
 
                 </section >
+            </Breakpoint>
 
-            </Breakpoint> */}
+            <Breakpoint at='xxl'>
+                <section className='hero__container'>
 
-            <section className='servicios__container'>
+                    <div className='subsection'>
+                        <div className='hero__title--mt animate__animated animate__fadeInLeft'>
+                            <h2>Tu cuerpo es</h2>
+                            <h2>el único lugar</h2>
+                            <h2>donde se</h2>
+                            <h2>puede vivir,</h2>
+                            <h2>
+                                <span className='text__highlight'>cuida de él.</span>
+                            </h2>
+                            <img
+                                className='hero__icon-arrow'
+                                src="https://res.cloudinary.com/ferjen/image/upload/v1681962589/yeah_stretching/icons/ys-icon-down-arrow_bcbfv1.svg"
+                                alt="Icono con flecha" />
+                            <h2>Hola!</h2>
+
+                        </div>
+                        {/* <div className='hero__image-container'>
+                            <img
+                                className='hero__image'
+                                src="https://res.cloudinary.com/ferjen/image/upload/v1682651967/yeah_stretching/profe/img-prof-01_cfiul0.png"
+                                alt="Profe Yamila" />
+                        </div> */}
+                    </div>
+
+                    <div className='subsection'>
+                        <div className='hero__title animate__animated animate__fadeInLeft'>
+                            <h2>Soy Yami Sayag</h2>
+                            <h4>Profe y creadora de Yeah Stretching</h4>
+                            <h5>Yeah comenzó en Marzo del 2021, surge como una alternativa online para <span
+                                className='hero__title--b'
+                            > seguir activos y en movimiento, cuidando la salud de nuestro cuerpo y nuestra mente</span>, desde el hogar.
+                            </h5>
+                            <h5
+                                className='mt-1 mb-2'
+                            >
+                                <span className='text__highlight text-bold'>¡Todos podemos y debemos hacer ejercicio!
+                                </span>
+                            </h5>
+                            <Button
+                                className='btn-primary'
+                            >Conocé más sobre mi &gt;
+                            </Button>
+                        </div>
+                    </div>
+
+                </section >
+            </Breakpoint>
+
+
+
+            <section className='servicios__container pt-2'>
                 <h2 className='servicios__title  animate__animated animate__fadeInUp'>
                     <span className='text__highlight'>{`Servicios que podés elegir :)`}</span>
                 </h2>
