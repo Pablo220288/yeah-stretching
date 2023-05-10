@@ -187,8 +187,8 @@ export const Reviews = ( { global } ) => {
                 <div className="reviews-container">
 
                     <Swiper
-                        slidesPerView={4}
-                        spaceBetween={150}
+                        slidesPerView={3}
+                        spaceBetween={100}
                         loop={true}
                         pagination={{
                             dynamicBullets: true,

@@ -312,7 +312,7 @@ h5 {
     }
 
     .services__container {
-        margin-top: 8.5rem;
+        margin-top: 0;
     }
 
 
@@ -335,15 +335,32 @@ h5 {
     h5 {
         font-size: $fs-lg;
     }
+
+    .empresa__text p {
+        font-size: $fs-lg;
+        font-family: $ff-primary;
+    }
+
+    .btn-primary {
+        font-size: $fs-lg;
+    }
+
+    .reviews__text {
+        font-size: $fs-lg;
+    }
 }
 
 @media only screen and (min-width: 1400px) {
 
     .hero__container {
-        column-gap: 20rem;
-        padding: 16rem 5rem;
-        padding-left: 2rem;
+        column-gap: 30rem;
+        padding: 25rem 5rem;
+        padding-left: 8rem;
         margin: 0 auto;
+    }
+
+    .hero__title {
+        width: 60%;
     }
 
     .services__container {
@@ -356,7 +373,7 @@ h5 {
     }
 
     h2 {
-        font-size: $fs-xxl;
+        font-size: $fs-xxxl;
     }
 
     h3 {
