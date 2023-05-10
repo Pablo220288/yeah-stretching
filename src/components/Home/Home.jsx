@@ -1,329 +1,64 @@
+
+
 import { Button } from "../Button";
 import { CardContainer } from '../CardContainer';
 import global from '../../utils/global.json';
 import { Reviews } from '../Reviews/Reviews';
 import { BiHeart } from "react-icons/bi";
 
-import { Breakpoint } from '../Breakpoints/Breakpoints';
 
 export const Home = () => {
     return (
         <main>
-            <div className='hero__curve'>
+
+            <section className='hero__curve'>
                 <img
                     className='hero__curve'
                     src="https://res.cloudinary.com/ferjen/image/upload/v1683603824/yeah_stretching/icons/home-banner_wuqq1o.png"
                     alt="Imagen de curvas rosadas"
                 />
-            </div>
+            </section>
 
+            <section className='hero__container'>
 
-            <Breakpoint at='xs'>
-                <section className='hero__container'>
+                <article className='hero__title animate__animated animate__fadeInLeft'>
+                    <h2>Tu cuerpo es el único lugar donde se puede vivir, <span className='text__highlight'>cuida de él.</span></h2>
 
-                    <div className='subsection'>
-                        <div className='hero__title--mt animate__animated animate__fadeInLeft'>
-                            <h2>Tu cuerpo es</h2>
-                            <h2>el único lugar</h2>
-                            <h2>donde se</h2>
-                            <h2>puede vivir,</h2>
-                            <h2 className='section__title'>
-                                <span className='text__highlight'>cuida de él.</span>
-                            </h2>
-                            <img
-                                className='hero__icon-arrow'
-                                src="https://res.cloudinary.com/ferjen/image/upload/v1681962589/yeah_stretching/icons/ys-icon-down-arrow_bcbfv1.svg"
-                                alt="Icono con flecha" />
-                            <h2>Hola!</h2>
+                    <img
+                        className='hero__icon-arrow'
+                        src="https://res.cloudinary.com/ferjen/image/upload/v1681962589/yeah_stretching/icons/ys-icon-down-arrow_bcbfv1.svg"
+                        alt="Decorativo icono con flecha" />
+                    <h2>Hola!</h2>
+                </article>
 
-                        </div>
-                        {/* <div className='hero__image-container'>
-                            <img
-                                className='hero__image'
-                                src="https://res.cloudinary.com/ferjen/image/upload/v1682651967/yeah_stretching/profe/img-prof-01_cfiul0.png"
-                                alt="Profe Yamila" />
-                        </div> */}
-                    </div>
+                <article className='hero__title--second animate__animated animate__fadeInLeft'>
+                    <h2>Soy Yami Sayag</h2>
+                    <h3 className='mb-1 mt-1'>Profe y creadora de Yeah Stretching</h3>
+                    <h4>Yeah comenzó en Marzo del 2021, surge como una alternativa online para <span
+                        className='hero__title--b'
+                    > seguir activos y en movimiento, cuidando la salud de nuestro cuerpo y nuestra mente</span>, desde el hogar.
+                    </h4>
+                    <h5 className='text__highlight text-bold mt-1 mb-2'>¡Todos podemos y debemos hacer ejercicio!</h5>
+                    <Button
+                        className='btn-primary'
+                        type='button'
+                        aria-label='Obtén más información sobre mí'
+                        title='Haz clic aquí para conocer más acerca de mí'
+                    >
+                        Conocé más sobre mi &gt;
+                    </Button>
 
-                    <div className='subsection'>
-                        <div className='hero__title animate__animated animate__fadeInLeft'>
-                            <h2>Soy Yami Sayag</h2>
-                            <h4>Profe y creadora de Yeah Stretching</h4>
-                            <h5>Yeah comenzó en Marzo del 2021, surge como una alternativa online para <span
-                                className='hero__title--b'
-                            > seguir activos y en movimiento, cuidando la salud de nuestro cuerpo y nuestra mente</span>, desde el hogar.
-                            </h5>
+                </article>
 
-                            <h5
-                                className='mt-1 mb-2'
-                            >
-                                <span className='text__highlight text-bold'>¡Todos podemos y debemos hacer ejercicio!
-                                </span>
-                            </h5>
+                {/* <div className='hero__title animate__animated animate__fadeInLeft'>
 
-                            <Button
-                                className='btn-primary'
-                            >Conocé más sobre mi &gt;
-                            </Button>
-                        </div>
-                    </div>
+                </div> */}
+            </section>
 
-                </section >
-            </Breakpoint>
+            <div></div>
 
-            <Breakpoint at='sm'>
-                <section className='hero__container'>
-
-                    <div className='subsection'>
-                        <div className='hero__title--mt animate__animated animate__fadeInLeft'>
-                            <h2>Tu cuerpo es</h2>
-                            <h2>el único lugar</h2>
-                            <h2>donde se</h2>
-                            <h2>puede vivir,</h2>
-                            <h2>
-                                <span className='text__highlight text-bold'>cuida de él.</span>
-                            </h2>
-                            <img
-                                className='hero__icon-arrow'
-                                src="https://res.cloudinary.com/ferjen/image/upload/v1681962589/yeah_stretching/icons/ys-icon-down-arrow_bcbfv1.svg"
-                                alt="Icono con flecha" />
-                            <h2>Hola!</h2>
-
-                        </div>
-                        {/* <div className='hero__image-container'>
-                            <img
-                                className='hero__image'
-                                src="https://res.cloudinary.com/ferjen/image/upload/v1682651967/yeah_stretching/profe/img-prof-01_cfiul0.png"
-                                alt="Profe Yamila" />
-                        </div> */}
-                    </div>
-
-                    <div className='subsection'>
-                        <div className='hero__title animate__animated animate__fadeInLeft'>
-                            <h2>Soy Yami Sayag</h2>
-                            <h4>Profe y creadora de Yeah Stretching</h4>
-                            <h5>Yeah comenzó en Marzo del 2021, surge como una alternativa online para <span
-                                className='hero__title--b'
-                            > seguir activos y en movimiento, cuidando la salud de nuestro cuerpo y nuestra mente</span>, desde el hogar.
-                            </h5>
-                            <h5
-                                className='mt-1 mb-2'
-                            >
-                                <span className='text__highlight text-bold'>¡Todos podemos y debemos hacer ejercicio!
-                                </span>
-                            </h5>
-                            <Button
-                                className='btn-primary'
-                            >Conocé más sobre mi &gt;
-                            </Button>
-                        </div>
-                    </div>
-
-                </section >
-            </Breakpoint>
-
-            <Breakpoint at='md'>
-                <section className='hero__container'>
-
-                    <div className='subsection'>
-                        <div className='hero__title--mt animate__animated animate__fadeInLeft'>
-                            <h2>Tu cuerpo es</h2>
-                            <h2>el único lugar</h2>
-                            <h2>donde se</h2>
-                            <h2>puede vivir,</h2>
-                            <h2>
-                                <span className='text__highlight'>cuida de él.</span>
-                            </h2>
-                            <img
-                                className='hero__icon-arrow'
-                                src="https://res.cloudinary.com/ferjen/image/upload/v1681962589/yeah_stretching/icons/ys-icon-down-arrow_bcbfv1.svg"
-                                alt="Icono con flecha" />
-                            <h2>Hola!</h2>
-
-                        </div>
-                        {/* <div className='hero__image-container'>
-                            <img
-                                className='hero__image'
-                                src="https://res.cloudinary.com/ferjen/image/upload/v1682651967/yeah_stretching/profe/img-prof-01_cfiul0.png"
-                                alt="Profe Yamila" />
-                        </div> */}
-                    </div>
-
-                    <div className='subsection'>
-                        <div className='hero__title animate__animated animate__fadeInLeft'>
-                            <h2>Soy Yami Sayag</h2>
-                            <h4>Profe y creadora de Yeah Stretching</h4>
-                            <h5>Yeah comenzó en Marzo del 2021, surge como una alternativa online para <span
-                                className='hero__title--b'
-                            > seguir activos y en movimiento, cuidando la salud de nuestro cuerpo y nuestra mente</span>, desde el hogar.
-                            </h5>
-                            <h5
-                                className='mt-1 mb-2'
-                            >
-                                <span className='text__highlight text-bold'>¡Todos podemos y debemos hacer ejercicio!
-                                </span>
-                            </h5>
-                            <Button
-                                className='btn-primary'
-                            >Conocé más sobre mi &gt;
-                            </Button>
-                        </div>
-                    </div>
-
-                </section >
-            </Breakpoint>
-
-            <Breakpoint at='lg'>
-                <section className='hero__container'>
-
-                    <div className='subsection'>
-                        <div className='hero__title--mt animate__animated animate__fadeInLeft'>
-                            <h2>Tu cuerpo es</h2>
-                            <h2>el único lugar</h2>
-                            <h2>donde se</h2>
-                            <h2>puede vivir,</h2>
-                            <h2>
-                                <span className='text__highlight'>cuida de él.</span>
-                            </h2>
-                            <img
-                                className='hero__icon-arrow'
-                                src="https://res.cloudinary.com/ferjen/image/upload/v1681962589/yeah_stretching/icons/ys-icon-down-arrow_bcbfv1.svg"
-                                alt="Icono con flecha" />
-                            <h2>Hola!</h2>
-                        </div>
-
-                    </div>
-
-                    <div className='subsection'>
-                        <div className='hero__title animate__animated animate__fadeInLeft'>
-                            <h2>Soy Yami Sayag</h2>
-                            <h4>Profe y creadora de Yeah Stretching</h4>
-                            <h5>Yeah comenzó en Marzo del 2021, surge como una alternativa online para <span
-                                className='hero__title--b'
-                            > seguir activos y en movimiento, cuidando la salud de nuestro cuerpo y nuestra mente</span>, desde el hogar.
-                            </h5>
-                            <h5
-                                className='mt-1 mb-2'
-                            >
-                                <span className='text__highlight text-bold'>¡Todos podemos y debemos hacer ejercicio!
-                                </span>
-                            </h5>
-                            <Button
-                                className='btn-primary'
-                            >Conocé más sobre mi &gt;
-                            </Button>
-                        </div>
-                    </div>
-
-                </section >
-            </Breakpoint>
-
-            <Breakpoint at='xl'>
-                <section className='hero__container'>
-
-                    <div className='subsection'>
-                        <div className='hero__title--mt animate__animated animate__fadeInLeft'>
-                            <h2>Tu cuerpo es</h2>
-                            <h2>el único lugar</h2>
-                            <h2>donde se</h2>
-                            <h2>puede vivir,</h2>
-                            <h2>
-                                <span className='text__highlight'>cuida de él.</span>
-                            </h2>
-                            <img
-                                className='hero__icon-arrow'
-                                src="https://res.cloudinary.com/ferjen/image/upload/v1681962589/yeah_stretching/icons/ys-icon-down-arrow_bcbfv1.svg"
-                                alt="Icono con flecha" />
-                            <h2>Hola!</h2>
-
-                        </div>
-                        {/* <div className='hero__image-container'>
-                            <img
-                                className='hero__image'
-                                src="https://res.cloudinary.com/ferjen/image/upload/v1682651967/yeah_stretching/profe/img-prof-01_cfiul0.png"
-                                alt="Profe Yamila" />
-                        </div> */}
-                    </div>
-
-                    <div className='subsection'>
-                        <div className='hero__title animate__animated animate__fadeInLeft'>
-                            <h2>Soy Yami Sayag</h2>
-                            <h4>Profe y creadora de Yeah Stretching</h4>
-                            <h5>Yeah comenzó en Marzo del 2021, surge como una alternativa online para <span
-                                className='hero__title--b'
-                            > seguir activos y en movimiento, cuidando la salud de nuestro cuerpo y nuestra mente</span>, desde el hogar.
-                            </h5>
-                            <h5
-                                className='mt-1 mb-2'
-                            >
-                                <span className='text__highlight text-bold'>¡Todos podemos y debemos hacer ejercicio!
-                                </span>
-                            </h5>
-                            <Button
-                                className='btn-primary'
-                            >Conocé más sobre mi &gt;
-                            </Button>
-                        </div>
-                    </div>
-
-                </section >
-            </Breakpoint>
-
-            <Breakpoint at='xxl'>
-                <section className='hero__container'>
-
-                    <div className='subsection'>
-                        <div className='hero__title--mt animate__animated animate__fadeInLeft'>
-                            <h2>Tu cuerpo es</h2>
-                            <h2>el único lugar</h2>
-                            <h2>donde se</h2>
-                            <h2>puede vivir,</h2>
-                            <h2>
-                                <span className='text__highlight'>cuida de él.</span>
-                            </h2>
-                            <img
-                                className='hero__icon-arrow'
-                                src="https://res.cloudinary.com/ferjen/image/upload/v1681962589/yeah_stretching/icons/ys-icon-down-arrow_bcbfv1.svg"
-                                alt="Icono con flecha" />
-                            <h2>Hola!</h2>
-
-                        </div>
-                        {/* <div className='hero__image-container'>
-                            <img
-                                className='hero__image'
-                                src="https://res.cloudinary.com/ferjen/image/upload/v1682651967/yeah_stretching/profe/img-prof-01_cfiul0.png"
-                                alt="Profe Yamila" />
-                        </div> */}
-                    </div>
-
-                    <div className='subsection'>
-                        <div className='hero__title animate__animated animate__fadeInLeft'>
-                            <h2>Soy Yami Sayag</h2>
-                            <h4>Profe y creadora de Yeah Stretching</h4>
-                            <h5>Yeah comenzó en Marzo del 2021, surge como una alternativa online para <span
-                                className='hero__title--b'
-                            > seguir activos y en movimiento, cuidando la salud de nuestro cuerpo y nuestra mente</span>, desde el hogar.
-                            </h5>
-                            <h5
-                                className='mt-1 mb-2'
-                            >
-                                <span className='text__highlight text-bold'>¡Todos podemos y debemos hacer ejercicio!
-                                </span>
-                            </h5>
-                            <Button
-                                className='btn-primary'
-                            >Conocé más sobre mi &gt;
-                            </Button>
-                        </div>
-                    </div>
-
-                </section >
-            </Breakpoint>
-
-
-
-            <section className='servicios__container pt-2'>
-                <h2 className='servicios__title  animate__animated animate__fadeInUp'>
+            <section className='services__container pt-2 mt-3'>
+                <h2 className='services__title  animate__animated animate__fadeInUp'>
                     <span className='text__highlight'>{`Servicios que podés elegir :)`}</span>
                 </h2>
                 <h5 className='mb-3'>Súmate a nuevas experiencias</h5>
@@ -334,9 +69,9 @@ export const Home = () => {
 
             <section className='empresa__container mt-4 mb-3'>
 
-                <div className='ps-2 mb-3 mt-2'>
-                    <h2>Si tenés una Empresa,</h2>
-                    <p className='empresa__text--s mb-2'>Invertí en la salud y bienestar corporativo para permitir que tu capital humano y empresarial se vea mejorado</p>
+                <div className='empresa__text ps-2 mb-3 mt-2'>
+                    <h2 className='mt-2 mb-1'>Si tenés una Empresa,</h2>
+                    <p className='mb-2'>Invertí en la salud y bienestar corporativo para permitir que tu capital humano y empresarial se vea mejorado</p>
                     <Button
                         className='btn-primary'
                     >
@@ -358,17 +93,17 @@ export const Home = () => {
 
                 <div>
                     <div className='reviews-text__container'>
-                        <h2 className=' text__highlight servicios__title'>
+                        <h2 className=' text__highlight mt-1 mb-2'>
                             Reviews&nbsp;
                             <span
                                 className='text__highlight--icon'>
                                 <BiHeart />
                             </span>&nbsp;
                         </h2>
-                        <p className='empresa__text--c mb-2'>Las opiniones, valoraciones o testimonios de nuestros clientes nos importan ¡y mucho!</p>
+                        <p className='reviews__text mb-2'>Las opiniones, valoraciones o testimonios de nuestros clientes nos importan ¡y mucho!</p>
                     </div>
 
-                    <div className='empresa__img'>
+                    <div className='reviews__container'>
                         <Reviews global={global} />
                     </div>
 
@@ -384,4 +119,5 @@ export const Home = () => {
         </main>
     )
 };
+
 

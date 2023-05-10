@@ -27,15 +27,6 @@
     text-align: center;
 }
 
-// .card-container .card-servicios {
-//     grid-area: title;
-//     height: 70px;
-
-//     font-size: 1rem;
-//     text-align: start;
-//     font-family: $ff-secondary;
-// }
-
 .card-servicios h3 {
     font-size: 0.5rem;
     font-weight: 500;
@@ -54,7 +45,7 @@
 }
 
 .servicios-pill {
-    font-size: 0.7rem;
+    font-size: $fs-xxs;
     background-color: $clr-grey-600;
     font-family: $ff-primary;
     padding: 0.25rem 0.5rem 0.3rem 0.5rem;
@@ -99,7 +90,7 @@
         align-items: center;
         justify-content: center;
         margin: 1rem 0;
-        width: 300px;
+        width: 100%;
         height: 340px;
         border-radius: 20px;
         background-color: white;
@@ -128,6 +119,7 @@
     }
 
     .card-servicios h3 {
+        font-family: $ff-secondary;
         font-size: 1rem;
         font-weight: 500;
         padding: 0.2rem 1rem;
@@ -145,12 +137,12 @@
     }
 
     .servicios-pill {
-        font-size: 0.7rem;
+        font-size: $fs-xs;
         background-color: $clr-grey-600;
         font-family: $ff-primary;
         padding: 0.25rem 0.5rem 0.3rem 0.5rem;
         border-radius: 15px;
-        font-weight: 600;
+        font-weight: 500;
     }
 
     .card-container button {
@@ -179,7 +171,6 @@
 }
 
 @media only screen and (min-width: 391px) and (max-width: 576px) {
-
 
     .card-container {
         display: grid;
@@ -214,13 +205,14 @@
         grid-area: title;
         height: 70px;
         color: $clr-black;
-        font-size: 1.2rem;
+        // font-size: 1.2rem;
         text-align: start;
         font-family: $ff-secondary;
     }
 
     .card-servicios h3 {
-        font-size: 1.2rem;
+        font-size: $fs-sm;
+        font-family: $ff-secondary;
         font-weight: 500;
         padding: 0.2rem 1rem;
         margin-top: 0.4rem;
@@ -237,7 +229,7 @@
     }
 
     .servicios-pill {
-        font-size: 0.7rem;
+        // font-size: 0.7rem;
         background-color: $clr-grey-600;
         font-family: $ff-primary;
         padding: 0.25rem 0.5rem 0.3rem 0.5rem;
@@ -308,13 +300,13 @@
         grid-area: title;
         height: 70px;
         color: $clr-black;
-        font-size: 1.2rem;
+        // font-size: 1.2rem;
         text-align: start;
         font-family: $ff-secondary;
     }
 
     .card-servicios h3 {
-        font-size: 1.2rem;
+        font-size: $fs-sm;
         font-weight: 500;
         padding: 0.2rem 1rem;
         margin-top: 0.4rem;
@@ -331,12 +323,7 @@
     }
 
     .servicios-pill {
-        font-size: 0.7rem;
-        background-color: $clr-grey-600;
-        font-family: $ff-primary;
-        padding: 0.25rem 0.5rem 0.3rem 0.5rem;
-        border-radius: 15px;
-        font-weight: 600;
+        font-size: $fs-xxs;
     }
 
     .card-container button {
@@ -350,7 +337,7 @@
         justify-content: end;
         border-top-left-radius: 0;
         border-top-right-radius: 0;
-        font-size: 0.9rem;
+        // font-size: 0.9rem;
         cursor: pointer;
     }
 
@@ -462,10 +449,286 @@
 
 /* Extra-large screens (992px to 1200px) */
 @media only screen and (min-width: 993px) and (max-width: 1200px) {
-    /* Your CSS code for extra-large screens here */
+    .cards-container {
+        display: flex;
+        gap: 20px;
+    }
+
+    .card-container {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas:
+            "image"
+            "title"
+            "button";
+        align-items: center;
+        justify-content: center;
+        margin: 1rem 0;
+        width: 230px;
+        height: 320px;
+        border-radius: 20px;
+        background-color: white;
+        object-fit: contain;
+        overflow: hidden;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    }
+
+    .card-container img {
+        grid-area: image;
+        width: auto;
+        height: 170px;
+        justify-content: center;
+        align-items: flex-start;
+        align-self: flex-start;
+        text-align: center;
+    }
+
+    .card-container .card-servicios {
+        grid-area: title;
+        height: 100px;
+        color: $clr-black;
+        font-size: 1rem;
+        text-align: start;
+        font-family: $ff-secondary;
+    }
+
+    .card-servicios h3 {
+        font-size: 0.8rem;
+        font-weight: 500;
+        padding: 0.2rem 1rem;
+        margin-top: 0.4rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .servicios-pill__container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 5px;
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+    }
+
+    .servicios-pill {
+        font-size: 0.6rem;
+        background-color: $clr-grey-600;
+        font-family: $ff-primary;
+        padding: 0.25rem 0.5rem 0.3rem 0.5rem;
+        border-radius: 15px;
+        font-weight: 600;
+    }
+
+    .card-container button {
+        grid-area: button;
+        height: 5rem;
+        padding: 0 1rem;
+        margin: 0;
+        background-color: $clr-pink-700;
+        color: $clr-black;
+        border: none;
+        justify-content: end;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        font-size: 0.9rem;
+        cursor: pointer;
+    }
+
+    .card-container__image {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        height: 170px;
+        background-color: $clr-pink-800;
+        overflow: hidden;
+    }
 }
 
-/* XXL screens (above 1201px) */
 @media only screen and (min-width: 1201px) {
-    /* Your CSS code for XXL screens here */
+    .cards-container {
+        display: flex;
+        gap: 40px;
+    }
+
+    .card-container {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas:
+            "image"
+            "title"
+            "button";
+        align-items: center;
+        justify-content: center;
+        margin: 1rem 0;
+        width: 350px;
+        height: 420px;
+        border-radius: 20px;
+        background-color: white;
+        object-fit: contain;
+        overflow: hidden;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    }
+
+    .card-container img {
+        grid-area: image;
+        width: auto;
+        height: 270px;
+        justify-content: center;
+        align-items: flex-start;
+        align-self: flex-start;
+        text-align: center;
+    }
+
+    .card-container .card-servicios {
+        grid-area: title;
+        height: 100px;
+        color: $clr-black;
+        text-align: start;
+        // font-family: $ff-secondary;
+    }
+
+    .card-servicios h3 {
+        font-size: $fs-lg;
+        font-family: $ff-secondary;
+        font-weight: 500;
+        padding: 0.2rem 1rem;
+        margin-top: 0.4rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .servicios-pill__container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 5px;
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+    }
+
+    .servicios-pill {
+        font-size: $fs-sm;
+        background-color: $clr-grey-600;
+        font-family: $ff-primary;
+        padding: 0.25rem 0.5rem 0.3rem 0.5rem;
+        border-radius: 15px;
+        font-weight: 600;
+    }
+
+    .card-container button {
+        grid-area: button;
+        height: 5rem;
+        padding: 0 1rem;
+        margin: 0;
+        background-color: $clr-pink-700;
+        color: $clr-black;
+        border: none;
+        justify-content: end;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        font-size: 0.9rem;
+        cursor: pointer;
+    }
+
+    .card-container__image {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        height: 220px;
+        background-color: $clr-pink-800;
+        overflow: hidden;
+    }
+}
+
+@media only screen and (min-width: 1401px) {
+    .cards-container {
+        display: flex;
+        gap: 40px;
+    }
+
+    .card-container {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas:
+            "image"
+            "title"
+            "button";
+        align-items: center;
+        justify-content: center;
+        margin: 1rem 0;
+        width: 400px;
+        height: 420px;
+        border-radius: 20px;
+        background-color: white;
+        object-fit: contain;
+        overflow: hidden;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    }
+
+    .card-container img {
+        grid-area: image;
+        width: auto;
+        height: 300px;
+        justify-content: center;
+        align-items: flex-start;
+        align-self: flex-start;
+        text-align: center;
+    }
+
+    .card-container .card-servicios {
+        grid-area: title;
+        height: 140px;
+        color: $clr-black;
+        text-align: start;
+        // font-family: $ff-secondary;
+    }
+
+    .card-servicios h3 {
+        font-size: $fs-lg;
+        font-family: $ff-secondary;
+        font-weight: 500;
+        padding: 0.2rem 1rem;
+        margin-top: 0.4rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .servicios-pill__container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 5px;
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+    }
+
+    .servicios-pill {
+        font-size: $fs-sm;
+        background-color: $clr-grey-600;
+        font-family: $ff-primary;
+        padding: 0.25rem 0.5rem 0.3rem 0.5rem;
+        border-radius: 15px;
+        font-weight: 600;
+    }
+
+    .card-container button {
+        grid-area: button;
+        height: 5rem;
+        padding: 0 1rem;
+        margin: 0;
+        background-color: $clr-pink-700;
+        color: $clr-black;
+        border: none;
+        justify-content: end;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        font-size: 0.9rem;
+        cursor: pointer;
+    }
+
+    .card-container__image {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        height: 220px;
+        background-color: $clr-pink-800;
+        overflow: hidden;
+    }
 }

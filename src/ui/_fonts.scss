@@ -15,10 +15,35 @@ $ff-primary: 'Louis George Café', sans-serif;
 $ff-primary-light: 'Louis George Café Light', sans-serif;
 $ff-secondary: 'Chapaza', serif;
 
+$fs-xxs: 0.6rem;
+$fs-xs: 0.75rem;
+$fs-sm: 1rem;
+$fs-md: 1.2rem;
+$fs-lg: 1.5rem;
+$fs-xl: 2rem;
+$fs-xxl: 2.5rem;
+
+$lh-sm: 1.25em;
+$lh-md: 1.75em;
+
 .ff-primary {
     font-family: $ff-primary;
 }
 
 .ff-secondary {
     font-family: $ff-secondary;
+}
+
+.text__highlight {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, $clr-pink-600 60%, rgba(255, 255, 255, 0) 100%);
+    display: inline-block;
+    padding: 0;
+}
+
+.text__highlight--white {
+    background: rgb(255, 255, 255);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 10%, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 0) 90%);
+    display: inline-block;
+    text-align: center;
+    padding: 0;
 }
