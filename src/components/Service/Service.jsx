@@ -3,16 +3,16 @@ import { IoIosArrowForward } from "react-icons/io";
 import { Button } from "../Button";
 
 export const Service = () => {
-  const [openMenu, setOpenMenu] = useState("");
-  const [stretchingAge, setStretchingAge] = useState("");
+  const [ openMenu, setOpenMenu ] = useState( "" );
+  const [ stretchingAge, setStretchingAge ] = useState( "" );
 
   const openClose = () => {
-    openMenu === "openMenu" ? setOpenMenu("") : setOpenMenu("openMenu");
+    openMenu === "openMenu" ? setOpenMenu( "" ) : setOpenMenu( "openMenu" );
   };
   const openStretchingAge = () => {
     stretchingAge === "openMenu"
-      ? setStretchingAge("")
-      : setStretchingAge("openMenu");
+      ? setStretchingAge( "" )
+      : setStretchingAge( "openMenu" );
   };
   return (
     <>
@@ -20,7 +20,7 @@ export const Service = () => {
         <div className="section__service">
           <div className="section__img"></div>
           <div className="section__text__container">
-            <h2 className="section__title">
+            <h2 className="section__title text__highlight">
               Stretching<span></span>
             </h2>
             <p className="section__text">
@@ -60,9 +60,13 @@ export const Service = () => {
         <div className="section__service pilatesMat">
           <div className="section__img"></div>
           <div className="section__text__container">
-            <h2 className="section__title">
-              Pilates Mat<span></span>
-            </h2>
+
+            <div className='section__text--oneLine'>
+              <h2 className="section__title text__highlight">
+                Pilates&nbsp;
+              </h2>
+              <h2 className="section__title text__highlight">Mat</h2>
+            </div>
             <p className="section__text">
               Es una disciplina orientada a fortalecer nuestro cuerpo, a través
               de una serie de ejercicios realizados en colchoneta que combinan
@@ -101,11 +105,12 @@ export const Service = () => {
           <div className="section__img"></div>
           <div className="section__text__container">
             <div>
-              <h2 className="section__title">
-                Stretching<span></span>
+              <h2 className="section__title text__highlight">
+                Stretching
               </h2>
-              <h2 className="section__title">
-                Restaurativo<span></span>
+              <br />
+              <h2 className="section__title text__highlight">
+                Restaurativo
               </h2>
             </div>
             <p className="section__text">
@@ -146,11 +151,12 @@ export const Service = () => {
           <div className="section__img"></div>
           <div className="section__text__container">
             <div>
-              <h2 className="section__title">
-                Bienestar<span></span>
+              <h2 className="section__title text__highlight">
+                Bienestar
               </h2>
-              <h2 className="section__title">
-                Empresas<span></span>
+              <br />
+              <h2 className="section__title text__highlight">
+                Empresas
               </h2>
             </div>
             <p className="section__text">
@@ -190,9 +196,9 @@ export const Service = () => {
               <p className="service__appointment">
                 “Es fundamental garantizar que los empleados de una organización
                 se encuentren en las mejores condiciones, que gocen de bienestar
-                físico, mental y emocional”.
+                físico, mental y emocional”. Erika Brú
               </p>
-              <p className="service__author">Erika Brú</p>
+              <p className="service__author"></p>
             </div>
           </div>
         </div>

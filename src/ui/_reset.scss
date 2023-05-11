@@ -2,6 +2,27 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    // --animate-duration: 2s;
+}
+
+::-webkit-scrollbar {
+    width: 0.5em;
+}
+
+::-webkit-scrollbar-track {
+    background: white;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background: rgb(241, 179, 210);
+    // background: linear-gradient(180deg, rgba(241, 179, 210, 1) 50%, rgba(255, 255, 255, 0) 100%);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    border-radius: 4px;
+    background: rgb(216, 129, 171);
+    // background: linear-gradient(180deg, rgba(216, 129, 171, 1) 50%, rgba(255, 255, 255, 0) 100%);
 }
 
 body {

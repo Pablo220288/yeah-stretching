@@ -8,24 +8,30 @@
   gap: 15px;
   background-color: $clr-grey-600;
   padding: 25px 0px;
+
   .footer__img {
     width: 60px;
   }
+
   .footer__mail {
     font-size: 0.9rem;
     color: $clr-black;
+    font-family: $ff-primary;
   }
+
   .link__container {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 10px;
+
     a {
       all: unset;
       cursor: pointer;
       color: $clr-black;
       font-size: 1.2rem;
+
       &:hover {
         color: $clr-grey-700;
       }
@@ -34,7 +40,7 @@
 }
 
 h1 {
-  font-family: $ff-secondary;
+  font-family: $ff-primary;
   font-size: 0.9rem;
   font-weight: 400;
   color: $clr-black;

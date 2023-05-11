@@ -1,13 +1,19 @@
 
 
+import global from '../../utils/global.json';
+import { BiHeart } from "react-icons/bi";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 import { Button } from "../Button";
 import { CardContainer } from '../CardContainer';
-import global from '../../utils/global.json';
 import { Reviews } from '../Reviews/Reviews';
-import { BiHeart } from "react-icons/bi";
 
 
 export const Home = () => {
+
+    AOS.init();
+
     return (
         <main>
 
@@ -21,7 +27,7 @@ export const Home = () => {
 
             <section className='hero__container'>
 
-                <article className='hero__title animate__animated animate__fadeInLeft'>
+                <article className='hero__title animate__animated animate__lightSpeedInLeft'>
                     <h2>Tu cuerpo es el único lugar donde se puede vivir, <span className='text__highlight'>cuida de él.</span></h2>
 
                     <img
@@ -31,7 +37,7 @@ export const Home = () => {
                     <h2>Hola!</h2>
                 </article>
 
-                <article className='hero__title--second animate__animated animate__fadeInLeft'>
+                <article className='hero__title--second animate__animated animate__lightSpeedInLeft animate__delay-0.5s'>
                     <h2>Soy Yami Sayag</h2>
                     <h3 className='mb-1 mt-1'>Profe y creadora de Yeah Stretching</h3>
                     <h4>Yeah comenzó en Marzo del 2021, surge como una alternativa online para <span
@@ -54,9 +60,9 @@ export const Home = () => {
 
             <div></div>
 
-            <section className='services__container pt-2'>
-                <h2 className='services__title animate__animated animate__fadeInUp'>
-                    <span className='text__highlight'>{`Servicios que podés elegir :)`}</span>
+            <section className='services__container pt-2' data-aos='fade-right' data-aos-offset='200'>
+                <h2 className='services__title'>
+                    <span className='text__highlight'>Servicios que podés elegir{` :)`}</span>
                 </h2>
                 <h5 className='services__subtitle'>Súmate a nuevas experiencias</h5>
                 <div>
@@ -66,7 +72,7 @@ export const Home = () => {
 
             <section className='empresa__container mt-4 mb-3'>
 
-                <div className='empresa__text ps-2 mb-3 mt-2'>
+                <div className='empresa__text ps-2 mb-3 mt-2' data-aos='fade-up' data-aos-offset='200'>
                     <h2 className='mt-2 mb-1'>Si tenés una Empresa,</h2>
                     <p className='mb-2'>Invertí en la salud y bienestar corporativo para permitir que tu capital humano y empresarial se vea mejorado</p>
                     <Button
@@ -88,7 +94,7 @@ export const Home = () => {
 
             <section className='reviews__container mt-4'>
 
-                <div>
+                <div data-aos='fade-right' data-aos-offset='200'>
                     <div className='reviews-text__container'>
                         <div className='reviews-title'>
                             <h2 className=' text__highlight mt-1 mb-2'>
@@ -100,18 +106,18 @@ export const Home = () => {
                         <p className='reviews__text mb-2'>Las opiniones, valoraciones o testimonios de nuestros clientes nos importan ¡y mucho!</p>
                     </div>
 
-                    <div className='reviews__container'>
+                    <div className='reviews__container' data-aos='fade-right' data-aos-offset='200'>
                         <Reviews global={global} />
                     </div>
+                </div>
 
-                </div>
                 <div className='mt-5 mb-5'>
-                    <button className='btn-secondary'>
-                        <h3>Cuando te falte motivación,</h3>
-                        <h3 className='text__highlight--white'>
-                            que te sobre disciplina</h3>
-                    </button>
+                    <div className="home__footer">
+                        <h2>Cuando te falte motivación,</h2>
+                        <h2 className='text__highlight--white'>que te sobre disciplina</h2>
+                    </div>
                 </div>
+
             </section>
 
         </main>

@@ -55,12 +55,9 @@ export const ContactForm = () => {
           <img className="hero__img" src="https://res.cloudinary.com/ferjen/image/upload/v1683587895/yeah_stretching/icons/form_nuf5gx.png" alt="Banner con ondas rosado" />
 
           <div className="hero__text">
-            <div className="text_title">
+            <div className="text_title text__highlight">
               <h2>
-                ¡Entrenemos<span></span>
-              </h2>
-              <h2>
-                {'juntos! :)'}<span></span>
+                ¡Entrenemos juntos! {' :)'}
               </h2>
             </div>
             <span>
@@ -84,10 +81,6 @@ export const ContactForm = () => {
               <label>Correo electrónico</label>
               <input type="email" name="user_email" />
             </div>
-            {/* <div className="form__section">
-              <label>Asunto</label>
-              <input type="text" name="affair" />
-            </div> */}
             <div className="form__section">
               <label>Detalle de tu consulta</label>
               <textarea name="message"></textarea>
@@ -95,7 +88,7 @@ export const ContactForm = () => {
             <Button type="submit" value="Send">Enviar Consulta</Button>
           </form>
 
-          <div className="form__redes__container">
+          <div className="form__redes__container ff-primary">
             <span>¿Ya me seguís? Conocé mis redes</span>
             <div className="icon__redes">
               <Link

@@ -1,42 +1,44 @@
 import { TbBolt } from "react-icons/tb";
 import { FiCoffee, FiThumbsUp, FiStar } from "react-icons/fi";
 import { Button } from "../Button";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 export const About = () => {
+
+  AOS.init();
+
   return (
     <>
       <div className="about__container">
         <div className="about__header">
-          <div className="header__text">
-            <h3>Hola!</h3>
-            <h3>Soy Yami Sayag</h3>
-            <div className="text_secondary__inner">
-              <h3>
+          <div className="header__text animate__animated animate__lightSpeedInLeft animate__delay-0.5s">
+            <h3>Hola!
+              <br />
+              Soy Yami Sayag
+            </h3>
+            <div>
+              <h4 className="text__highlight">
                 Instructora de Stretching,
                 <span></span>
-              </h3>
-              <h3>
-                Pilates Mat,Meditación y Esferodinamia
+              </h4>
+              <h4 className="text__highlight">
+                Pilates Mat, Meditación y
                 <span></span>
-              </h3>
+              </h4>
+              <h4 className="text__highlight">
+                Esferodinamia
+                <span></span>
+              </h4>
             </div>
           </div>
           <div className="header__img"></div>
         </div>
-        <div className="text_secondary">
-          <h3>
-            Instructora de Stretching,
-            <span></span>
-          </h3>
-          <h3>
-            Pilates Mat,Meditación y Esferodinamia
-            <span></span>
-          </h3>
-        </div>
+
         <div className="about__main__container">
           <div className="main__container">
-            <h3 className="main__title">
-              Mi Hsitoria<span></span>
+            <h3 className="main__title text__highlight animate__animated animate__lightSpeedInLeft animate__delay-0.5s">
+              Mi Hsitoria
             </h3>
             <p className="main__text">
               Soy Yami Sayag, tengo 35 años y soy Licenciada en Administración
@@ -79,7 +81,7 @@ export const About = () => {
               <div className="redes__icon">
                 <FiThumbsUp className="icon" />
               </div>
-              <sapn className="redes__text">
+              <sapn className="redes__text animate__animated animate__lightSpeedInRight animate__delay-0.5s">
                 Canceriana con ascendente en Leo
               </sapn>
             </div>
@@ -87,37 +89,37 @@ export const About = () => {
               <div className="redes__icon">
                 <TbBolt className="icon" />
               </div>
-              <sapn className="redes__text">Inquieta, sociable y creativa</sapn>
+              <sapn className="redes__text animate__animated animate__lightSpeedInRight animate__delay-1s">Inquieta, sociable y creativa</sapn>
             </div>
             <div className="redes__container">
               <div className="redes__icon">
                 <FiStar className="icon" />
               </div>
-              <sapn className="redes__text">Emprendedora empedernida</sapn>
+              <sapn className="redes__text animate__animated animate__lightSpeedInRight animate__delay-0.5s">Emprendedora empedernida</sapn>
             </div>
             <div className="redes__container">
               <div className="redes__icon">
                 <FiCoffee className="icon" />
               </div>
-              <sapn className="redes__text">
+              <sapn className="redes__text animate__animated animate__lightSpeedInRight animate__delay-1s">
                 Amante del mate y del café con leche
               </sapn>
             </div>
           </div>
         </div>
         <div className="about__curriculum">
-          <h2>
-            Mis Capacidades<span></span>
+          <h2 className='text__highlight' data-aos='fade-right' data-aos-offset='200'>
+            Mis Capacidades
           </h2>
-          <span>¡Descargá mi CV para conocerme más!</span>
-          <Button>Descargar</Button>
+          <span className='ff-primary'>¡Descargá mi CV para conocerme más!</span>
+          <Button className='ff-primary' data-aos='fade-up' data-aos-offset='200'>Descargar</Button>
         </div>
-        <div className="about__footer">
-          <h2>
-            Movimiento es vida…<span></span>
+        <div className="about__footer" data-aos='fade-right' data-aos-offset='200'>
+          <h2 className='text__highlight--white'>
+            Movimiento es vida…
           </h2>
-          <span>y quiero acompañarte en ese proceso.</span>
-          <span>¡Te espero!</span>
+          <h2>y quiero acompañarte en ese proceso.</h2>
+          <h2 >¡Te espero!</h2>
         </div>
       </div>
     </>
