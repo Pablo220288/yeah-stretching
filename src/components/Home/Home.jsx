@@ -38,7 +38,8 @@ export const Home = () => {
                         className='hero__title--b'
                     > seguir activos y en movimiento, cuidando la salud de nuestro cuerpo y nuestra mente</span>, desde el hogar.
                     </h4>
-                    <h5 className='text__highlight text-bold mt-1 mb-2'>¡Todos podemos y debemos hacer ejercicio!</h5>
+                    <h5 className='text__highlight text-bold mt-1'>¡Todos podemos y &nbsp;</h5>
+                    <h5 className='text__highlight text-bold mb-2'>debemos hacer ejercicio!</h5>
                     <Button
                         className='btn-primary'
                         type='button'
@@ -47,21 +48,17 @@ export const Home = () => {
                     >
                         Conocé más sobre mi &gt;
                     </Button>
-
                 </article>
 
-                {/* <div className='hero__title animate__animated animate__fadeInLeft'>
-
-                </div> */}
             </section>
 
             <div></div>
 
-            <section className='services__container pt-2 mt-3'>
-                <h2 className='services__title  animate__animated animate__fadeInUp'>
+            <section className='services__container pt-2'>
+                <h2 className='services__title animate__animated animate__fadeInUp'>
                     <span className='text__highlight'>{`Servicios que podés elegir :)`}</span>
                 </h2>
-                <h5 className='mb-3'>Súmate a nuevas experiencias</h5>
+                <h5 className='services__subtitle'>Súmate a nuevas experiencias</h5>
                 <div>
                     <CardContainer global={global} />
                 </div>
@@ -93,13 +90,13 @@ export const Home = () => {
 
                 <div>
                     <div className='reviews-text__container'>
-                        <h2 className=' text__highlight mt-1 mb-2'>
-                            Reviews&nbsp;
-                            <span
-                                className='text__highlight--icon'>
-                                <BiHeart />
-                            </span>&nbsp;
-                        </h2>
+                        <div className='reviews-title'>
+                            <h2 className=' text__highlight mt-1 mb-2'>
+                                Reviews&nbsp;
+                                <span className='text__highlight'><BiHeart />&nbsp;</span>
+                            </h2>
+
+                        </div>
                         <p className='reviews__text mb-2'>Las opiniones, valoraciones o testimonios de nuestros clientes nos importan ¡y mucho!</p>
                     </div>
 
@@ -108,12 +105,13 @@ export const Home = () => {
                     </div>
 
                 </div>
-                <button className='btn-secondary'>
-                    <h3>Cuando te falte motivación,</h3>
-                    <h3 className='text__highlight--white'>
-                        que te sobre disciplina</h3>
-                </button>
-
+                <div className='mt-5 mb-5'>
+                    <button className='btn-secondary'>
+                        <h3>Cuando te falte motivación,</h3>
+                        <h3 className='text__highlight--white'>
+                            que te sobre disciplina</h3>
+                    </button>
+                </div>
             </section>
 
         </main>

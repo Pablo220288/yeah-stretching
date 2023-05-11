@@ -11,15 +11,15 @@ export const About = () => {
             <h3>Hola!</h3>
             <h3>Soy Yami Sayag</h3>
             <div className="text_secondary__inner">
-          <h3>
-            Instructora de Stretching,
-            <span></span>
-          </h3>
-          <h3>
-            Pilates Mat,Meditación y Esferodinamia
-            <span></span>
-          </h3>
-        </div>
+              <h3>
+                Instructora de Stretching,
+                <span></span>
+              </h3>
+              <h3>
+                Pilates Mat,Meditación y Esferodinamia
+                <span></span>
+              </h3>
+            </div>
           </div>
           <div className="header__img"></div>
         </div>

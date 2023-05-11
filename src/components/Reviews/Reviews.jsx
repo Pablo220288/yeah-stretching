@@ -187,7 +187,7 @@ export const Reviews = ( { global } ) => {
                 <div className="reviews-container">
 
                     <Swiper
-                        slidesPerView={3}
+                        slidesPerView={5}
                         spaceBetween={100}
                         loop={true}
                         pagination={{

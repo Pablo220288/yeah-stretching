@@ -101,6 +101,13 @@ h5 {
     width: 90%;
 }
 
+.reviews-title {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
 .reviews__text {
     font-size: $fs-xs;
     font-family: $ff-primary;
@@ -153,7 +160,6 @@ h5 {
         font-size: $fs-xs;
     }
 }
-
 
 @media only screen and (min-width: 600px) {
 
@@ -273,6 +279,7 @@ h5 {
         column-gap: 6rem;
         padding: 11rem 5rem;
         padding-left: 2rem;
+        padding-bottom: 2rem;
         margin: 0 auto;
     }
 
@@ -308,6 +315,7 @@ h5 {
         column-gap: 6rem;
         padding: 16rem 5rem;
         padding-left: 2rem;
+        padding-bottom: 10rem;
         margin: 0 auto;
     }
 
@@ -350,6 +358,18 @@ h5 {
     }
 }
 
+@media only screen and (min-width: 1250px) {
+    .hero__container {
+        padding-bottom: 16rem;
+    }
+}
+
+@media only screen and (min-width: 1300px) {
+    .hero__container {
+        padding-bottom: 20rem;
+    }
+}
+
 @media only screen and (min-width: 1400px) {
 
     .hero__container {
@@ -357,10 +377,11 @@ h5 {
         padding: 25rem 5rem;
         padding-left: 8rem;
         margin: 0 auto;
+        padding-bottom: 10rem;
     }
 
     .hero__title {
-        width: 60%;
+        width: 100%;
     }
 
     .services__container {
@@ -434,4 +455,14 @@ h5 {
         font-size: $fs-md;
     }
 
+    .btn-secondary h3 {
+        font-size: $fs-lg;
+    }
+
+}
+
+@media only screen and (min-width: 1750px) {
+    .hero__container {
+        padding-bottom: 15rem;
+    }
 }

@@ -15,17 +15,23 @@ $ff-primary: 'Louis George Café', sans-serif;
 $ff-primary-light: 'Louis George Café Light', sans-serif;
 $ff-secondary: 'Chapaza', serif;
 
-$fs-xxs: 0.6rem;
-$fs-xs: 0.75rem;
-$fs-sm: 1rem;
-$fs-md: 1.2rem;
-$fs-lg: 1.5rem;
-$fs-xl: 2rem;
-$fs-xxl: 2.5rem;
-$fs-xxxl: 3.5rem;
+$fs-xxxs: 0.5em;
+$fs-xxs: 0.6em;
+$fs-xs: 0.75em;
+$fs-sm: 1em;
+$fs-md: 1.2em;
+$fs-lg: 1.5em;
+$fs-xl: 2em;
+$fs-xxl: 2.5em;
+$fs-xxxl: 3.5em;
 
 $lh-sm: 1.25em;
 $lh-md: 1.75em;
+
+$gradient-pink: linear-gradient(0deg, rgba(255, 255, 255, 1) 6%, rgba(252, 205, 228, 1) 21%, rgba(252, 205, 228, 1) 54%, rgba(255, 255, 255, 1) 76%, rgba(255, 255, 255, 1) 100%);
+
+$gradient-white: linear-gradient(0deg, rgba(255, 255, 255, 0) 6%, rgba(255, 255, 255, 1) 24%, rgba(255, 255, 255, 1) 52%, rgba(255, 255, 255, 0) 74%, rgba(255, 255, 255, 0) 100%);
+
 
 .ff-primary {
     font-family: $ff-primary;
@@ -36,14 +42,13 @@ $lh-md: 1.75em;
 }
 
 .text__highlight {
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, $clr-pink-600 60%, rgba(255, 255, 255, 0) 100%);
+    background: $gradient-pink;
     display: inline-block;
     padding: 0;
 }
 
 .text__highlight--white {
-    background: rgb(255, 255, 255);
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 10%, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 0) 90%);
+    background: $gradient-white;
     display: inline-block;
     text-align: center;
     padding: 0;
