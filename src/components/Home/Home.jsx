@@ -33,7 +33,7 @@ export const Home = () => {
             src="https://res.cloudinary.com/ferjen/image/upload/v1681962589/yeah_stretching/icons/ys-icon-down-arrow_bcbfv1.svg"
             alt="Decorativo icono con flecha"
           />
-          <h2>Hola!</h2>
+          <h2>¡Hola!</h2>
         </article>
 
         <article className="hero__title--second animate__animated animate__lightSpeedInLeft animate__delay-0.5s">
