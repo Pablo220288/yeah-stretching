@@ -7,7 +7,6 @@ import { FiCoffee, FiThumbsUp, FiStar } from "react-icons/fi";
 
 import { Button } from '../Button/Button';
 
-
 export const About = () => {
 
   AOS.init();

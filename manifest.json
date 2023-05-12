@@ -2,6 +2,18 @@
     "name": "Yeah Stretching",
     "short_name": "Yeah",
     "description": "Sitio web de Yeah Stretching de Prof. Yamila Sayag",
+    "manifestVersion": "1.0",
+    "version": "1.0.0",
+    "localizationInfo": {
+        "defaultLanguageTag": "en-us",
+        "additionalLanguages": [
+            {
+                "languageTag": "es-es",
+                "file": "en-us.json",
+                "name": "Yeah Estiramiento"
+            }
+        ]
+    },
     "start_url": "/",
     "display": "standalone",
     "theme_color": "#ffffff",
