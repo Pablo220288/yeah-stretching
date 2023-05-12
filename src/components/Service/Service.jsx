@@ -3,22 +3,21 @@ import { IoIosArrowForward } from "react-icons/io";
 
 import AOS from "aos";
 
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 export const Service = () => {
-
   AOS.init();
 
-  const [ openMenu, setOpenMenu ] = useState( "" );
-  const [ stretchingAge, setStretchingAge ] = useState( "" );
+  const [openMenu, setOpenMenu] = useState("");
+  const [stretchingAge, setStretchingAge] = useState("");
 
   const openClose = () => {
-    openMenu === "openMenu" ? setOpenMenu( "" ) : setOpenMenu( "openMenu" );
+    openMenu === "openMenu" ? setOpenMenu("") : setOpenMenu("openMenu");
   };
   const openStretchingAge = () => {
     stretchingAge === "openMenu"
-      ? setStretchingAge( "" )
-      : setStretchingAge( "openMenu" );
+      ? setStretchingAge("")
+      : setStretchingAge("openMenu");
   };
   return (
     <>
@@ -60,10 +59,7 @@ export const Service = () => {
                 </div>
               </summary>
             </details>
-            <Link
-              to='/service'
-              className="btn-primary"
-            >
+            <Link to="/contact" className="btn-primary">
               Contratar
             </Link>
           </div>
@@ -71,12 +67,10 @@ export const Service = () => {
         <div className="section__service pilatesMat">
           <div className="section__img"></div>
           <div className="section__text__container">
-
-            <div className='section__text--oneLine'>
+            <div className="section__text--oneLine">
               <h2 className="section__title text__highlight header__text animate__animated animate__lightSpeedInLeft animate__delay-0.5s">
-                Pilates&nbsp;
+                Pilates Mat
               </h2>
-              <h2 className="section__title text__highlight header__text animate__animated animate__lightSpeedInLeft animate__delay-0.5s">Mat</h2>
             </div>
             <p className="section__text">
               Es una disciplina orientada a fortalecer nuestro cuerpo, a través
@@ -109,10 +103,7 @@ export const Service = () => {
                 </div>
               </summary>
             </details>
-            <Link
-              to='/service'
-              className="btn-primary"
-            >
+            <Link to="/contact" className="btn-primary">
               Contratar
             </Link>
           </div>
@@ -161,10 +152,7 @@ export const Service = () => {
               </summary>
             </details>
 
-            <Link
-              to='/service'
-              className="btn-primary"
-            >
+            <Link to="/contact" className="btn-primary">
               Contratar
             </Link>
           </div>
@@ -182,8 +170,12 @@ export const Service = () => {
               </h2>
             </div>
             <p className="section__text">
-              Es un plan o programa que implementa medidas para mejorar la calidad de vida de los trabajadores. Entre los servicios que presta este paquete se incluyen: sesiones grupales online con ejercicios simples de stretching que se realizan desde la silla o el escritorio, técnicas de respiración, información sobre pausas activas, tips para mejorar la calidad de vida.
-
+              Es un plan o programa que implementa medidas para mejorar la
+              calidad de vida de los trabajadores. Entre los servicios que
+              presta este paquete se incluyen: sesiones grupales online con
+              ejercicios simples de stretching que se realizan desde la silla o
+              el escritorio, técnicas de respiración, información sobre pausas
+              activas, tips para mejorar la calidad de vida.
             </p>
             <details className="accordion">
               <summary className="accordion_title">
@@ -212,10 +204,7 @@ export const Service = () => {
                 </div>
               </summary>
             </details>
-            <Link
-              to='/service'
-              className="btn-primary"
-            >
+            <Link to="/contact" className="btn-primary">
               Contratar
             </Link>
             <div>

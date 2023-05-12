@@ -19,7 +19,7 @@
 
     .hero__text {
       position: absolute;
-      top: 22vh;
+      top: 35vh;
       left: 10vw;
       bottom: 20%;
       left: 20px;
@@ -30,6 +30,7 @@
       font-family: $ff-primary;
 
       .text_title {
+        font-size: 1.5rem;
         margin-bottom: 20px;
 
         h2 {
@@ -39,7 +40,6 @@
           font-weight: 500;
           color: $clr-black;
           position: relative;
-
         }
       }
 
@@ -53,7 +53,7 @@
 
   .form__redes {
     width: 80%;
-    margin: 100px auto 50px auto;
+    margin: 140px auto 50px auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -278,7 +278,6 @@
       .hero__text {
         position: absolute;
         bottom: 25vh;
-        left: 10vw;
         // bottom: 220px;
 
         .text_title {
@@ -289,13 +288,14 @@
           }
         }
       }
+    }
 
-      .form__redes {
-        width: 100%;
-        padding: 0px 30px;
-        flex-direction: row;
-        gap: 20px;
-      }
+    .form__redes {
+      margin: 50px auto 50px auto;
+      width: 100%;
+      padding: 0px 30px;
+      flex-direction: row;
+      gap: 20px;
     }
   }
 }

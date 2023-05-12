@@ -362,9 +362,9 @@
     border-radius: 20px;
 
     h2 {
+      font-family: $ff-secondary;
       width: fit-content;
       font-size: 1.5rem;
-      font-weight: 500;
       color: $clr-black;
       position: relative;
       z-index: 2;

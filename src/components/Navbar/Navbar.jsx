@@ -59,7 +59,7 @@ export const Navbar = () => {
               Servicios
             </NavLink>
             <NavLink className="navbar__link" to="/contact" onClick={closeMenu}>
-              Conacto
+              Contacto
             </NavLink>
           </div>
           <div className="footer_nav">
