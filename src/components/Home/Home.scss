@@ -139,7 +139,7 @@ h5 {
 @media only screen and (min-width: 330px) {
     .hero__title--second {
         grid-row: 2 / span 1;
-        grid-column: 1 / span 1;
+        grid-column: 1 / span 2;
     }
 
     .hero__container {
@@ -148,7 +148,7 @@ h5 {
     }
 }
 
-@media only screen and (min-width: 480px) {
+@media only screen and (min-width: 400px) {
     .hero__title--second {
         grid-row: 2 / span 1;
         grid-column: 1 / span 1;
