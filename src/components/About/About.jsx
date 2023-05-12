@@ -1,8 +1,12 @@
+import { Link } from 'react-router-dom';
+
+import AOS from "aos";
+
 import { TbBolt } from "react-icons/tb";
 import { FiCoffee, FiThumbsUp, FiStar } from "react-icons/fi";
-import { Button } from "../Button";
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+
+import { Button } from '../Button/Button';
+
 
 export const About = () => {
 
@@ -81,29 +85,29 @@ export const About = () => {
               <div className="redes__icon">
                 <FiThumbsUp className="icon" />
               </div>
-              <sapn className="redes__text animate__animated animate__lightSpeedInRight animate__delay-0.5s">
+              <span className="redes__text animate__animated animate__lightSpeedInRight animate__delay-0.5s">
                 Canceriana con ascendente en Leo
-              </sapn>
+              </span>
             </div>
             <div className="redes__container">
               <div className="redes__icon">
                 <TbBolt className="icon" />
               </div>
-              <sapn className="redes__text animate__animated animate__lightSpeedInRight animate__delay-1s">Inquieta, sociable y creativa</sapn>
+              <span className="redes__text animate__animated animate__lightSpeedInRight animate__delay-1s">Inquieta, sociable y creativa</span>
             </div>
             <div className="redes__container">
               <div className="redes__icon">
                 <FiStar className="icon" />
               </div>
-              <sapn className="redes__text animate__animated animate__lightSpeedInRight animate__delay-0.5s">Emprendedora empedernida</sapn>
+              <span className="redes__text animate__animated animate__lightSpeedInRight animate__delay-0.5s">Emprendedora empedernida</span>
             </div>
             <div className="redes__container">
               <div className="redes__icon">
                 <FiCoffee className="icon" />
               </div>
-              <sapn className="redes__text animate__animated animate__lightSpeedInRight animate__delay-1s">
+              <span className="redes__text animate__animated animate__lightSpeedInRight animate__delay-1s">
                 Amante del mate y del café con leche
-              </sapn>
+              </span>
             </div>
           </div>
         </div>
@@ -112,7 +116,19 @@ export const About = () => {
             Mis Capacidades
           </h2>
           <span className='ff-primary'>¡Descargá mi CV para conocerme más!</span>
-          <Button className='ff-primary' data-aos='fade-up' data-aos-offset='200'>Descargar</Button>
+
+          <Link
+            data-aos='fade-up'
+            data-aos-offset='200'
+            to='https://res.cloudinary.com/ferjen/image/upload/v1683841870/yeah_stretching/assets/CV-SayagYamila-2023_uyyye1.pdf'
+            target='_blank'
+            rel='noopener noreferrer'
+            title='Descargar CV en formato PDF'
+          >
+            <Button className='ff-primary'>Descargar</Button>
+          </Link>
+
+
         </div>
         <div className="about__footer" data-aos='fade-right' data-aos-offset='200'>
           <h2 className='text__highlight--white'>

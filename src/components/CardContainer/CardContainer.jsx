@@ -6,9 +6,6 @@ import { CardItem } from '../CardItem/CardItem';
 export const CardContainer = ( { global } ) => {
     const servicios = Array.isArray( global.servicios ) ? global.servicios : [];
 
-    console.log( servicios );
-
-
     return (
         <>
             <div className="cards-container">

@@ -2,12 +2,12 @@
 
 import global from '../../utils/global.json';
 import { BiHeart } from "react-icons/bi";
-import AOS from 'aos';
-import 'aos/dist/aos.css';
 
-import { Button } from "../Button";
-import { CardContainer } from '../CardContainer';
+import AOS from "aos";
+
+import { CardContainer } from '../CardContainer/CardContainer';
 import { Reviews } from '../Reviews/Reviews';
+import { Button } from '../Button/Button';
 
 
 export const Home = () => {

@@ -1,16 +1,22 @@
 
 
+import { useRef } from 'react';
 import { Link } from "react-router-dom";
-import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
+
+import AOS from "aos";
+
 import { GrLinkedinOption, GrInstagram } from "react-icons/gr";
 import { ImWhatsapp } from "react-icons/im";
+
 import Swal from 'sweetalert2'
 
-import { Button } from "../Button";
+import { Button } from '../Button/Button';
 
 
 export const ContactForm = () => {
+
+  AOS.init();
 
   const form = useRef();
 
@@ -73,15 +79,15 @@ export const ContactForm = () => {
             ref={form}
             onSubmit={sendEmail}
           >
-            <div className="form__section">
+            <div className="form__section animate__animated animate__lightSpeedInRight animate__delay-0.5s">
               <label>Nombre y Apellido / Empresa</label>
               <input type="text" name="user_name" />
             </div>
-            <div className="form__section">
+            <div className="form__section animate__animated animate__lightSpeedInLeft animate__delay-0.5s">
               <label>Correo electrónico</label>
               <input type="email" name="user_email" />
             </div>
-            <div className="form__section">
+            <div className="form__section animate__animated animate__lightSpeedInRight animate__delay-0.5s">
               <label>Detalle de tu consulta</label>
               <textarea name="message"></textarea>
             </div>

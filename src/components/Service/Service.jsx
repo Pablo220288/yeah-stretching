@@ -1,8 +1,14 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { IoIosArrowForward } from "react-icons/io";
-import { Button } from "../Button";
+
+import AOS from "aos";
+
+import { Link } from 'react-router-dom';
 
 export const Service = () => {
+
+  AOS.init();
+
   const [ openMenu, setOpenMenu ] = useState( "" );
   const [ stretchingAge, setStretchingAge ] = useState( "" );
 
@@ -20,8 +26,8 @@ export const Service = () => {
         <div className="section__service">
           <div className="section__img"></div>
           <div className="section__text__container">
-            <h2 className="section__title text__highlight">
-              Stretching<span></span>
+            <h2 className="section__title text__highlight header__text animate__animated animate__lightSpeedInRight animate__delay-0.5s">
+              Stretching
             </h2>
             <p className="section__text">
               Es una disciplina orientada a estirar los músculos de nuestro
@@ -54,7 +60,12 @@ export const Service = () => {
                 </div>
               </summary>
             </details>
-            <Button className="button__service">Contratar</Button>
+            <Link
+              to='/service'
+              className="btn-primary"
+            >
+              Contratar
+            </Link>
           </div>
         </div>
         <div className="section__service pilatesMat">
@@ -62,10 +73,10 @@ export const Service = () => {
           <div className="section__text__container">
 
             <div className='section__text--oneLine'>
-              <h2 className="section__title text__highlight">
+              <h2 className="section__title text__highlight header__text animate__animated animate__lightSpeedInLeft animate__delay-0.5s">
                 Pilates&nbsp;
               </h2>
-              <h2 className="section__title text__highlight">Mat</h2>
+              <h2 className="section__title text__highlight header__text animate__animated animate__lightSpeedInLeft animate__delay-0.5s">Mat</h2>
             </div>
             <p className="section__text">
               Es una disciplina orientada a fortalecer nuestro cuerpo, a través
@@ -98,18 +109,23 @@ export const Service = () => {
                 </div>
               </summary>
             </details>
-            <Button className="button__service">Contratar</Button>
+            <Link
+              to='/service'
+              className="btn-primary"
+            >
+              Contratar
+            </Link>
           </div>
         </div>
         <div className="section__service stretchingRestaurativo">
           <div className="section__img"></div>
           <div className="section__text__container">
             <div>
-              <h2 className="section__title text__highlight">
+              <h2 className="section__title text__highlight header__text animate__animated animate__lightSpeedInRight animate__delay-0.5s">
                 Stretching
               </h2>
               <br />
-              <h2 className="section__title text__highlight">
+              <h2 className="section__title text__highlight header__text animate__animated animate__lightSpeedInRight animate__delay-0.5s">
                 Restaurativo
               </h2>
             </div>
@@ -144,18 +160,24 @@ export const Service = () => {
                 </div>
               </summary>
             </details>
-            <Button className="button__service">Contratar</Button>
+
+            <Link
+              to='/service'
+              className="btn-primary"
+            >
+              Contratar
+            </Link>
           </div>
         </div>
         <div className="section__service bienestarEmpresas">
           <div className="section__img"></div>
           <div className="section__text__container">
             <div>
-              <h2 className="section__title text__highlight">
+              <h2 className="section__title text__highlight header__text animate__animated animate__lightSpeedInLeft animate__delay-0.5s">
                 Bienestar
               </h2>
               <br />
-              <h2 className="section__title text__highlight">
+              <h2 className="section__title text__highlight header__text animate__animated animate__lightSpeedInLeft animate__delay-0.5s">
                 Empresas
               </h2>
             </div>
@@ -191,7 +213,12 @@ export const Service = () => {
                 </div>
               </summary>
             </details>
-            <Button className="button__service">Contratar</Button>
+            <Link
+              to='/service'
+              className="btn-primary"
+            >
+              Contratar
+            </Link>
             <div>
               <p className="service__appointment">
                 “Es fundamental garantizar que los empleados de una organización

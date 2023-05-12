@@ -1,7 +1,5 @@
 
 
-import { Button } from '../Button';
-
 export const ReviewsItem = ( { review } ) => {
     const { id, user, comment } = review;
 

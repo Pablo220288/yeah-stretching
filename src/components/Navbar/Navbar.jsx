@@ -1,16 +1,19 @@
 import { NavLink } from "react-router-dom";
-import logo from "../../assets/logo 2.svg";
+
 import { useState } from "react";
-import { Footer } from "../Footer";
+import { Footer } from '../Footer/Footer';
+
 
 export const Navbar = () => {
-  const [open, setOpen] = useState("");
+  const [ open, setOpen ] = useState( "" );
+
+  const logo = 'https://res.cloudinary.com/ferjen/image/upload/v1683841391/yeah_stretching/icons/ys-logo_yhsytc.svg';
 
   const openClose = () => {
-    open === "navbar__is-active" ? setOpen("") : setOpen("navbar__is-active");
+    open === "navbar__is-active" ? setOpen( "" ) : setOpen( "navbar__is-active" );
   };
   const closeMenu = () => {
-    setOpen("");
+    setOpen( "" );
   };
   return (
     <>
