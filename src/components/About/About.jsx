@@ -41,7 +41,7 @@ export const About = () => {
         <div className="about__main__container">
           <div className="main__container">
             <h3 className="main__title text__highlight animate__animated animate__lightSpeedInLeft animate__delay-0.5s">
-              Mi Hsitoria
+              Mi Historia
             </h3>
             <p className="main__text">
               Soy Yami Sayag, tengo 35 años y soy Licenciada en Administración
@@ -112,7 +112,7 @@ export const About = () => {
         </div>
         <div className="about__curriculum">
           <h2 className='text__highlight' data-aos='fade-right' data-aos-offset='200'>
-            Mis Capacidades
+            Mis Capacitaciones
           </h2>
           <span className='ff-primary'>¡Descargá mi CV para conocerme más!</span>
 

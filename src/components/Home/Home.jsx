@@ -39,13 +39,13 @@ export const Home = () => {
 
                 <article className='hero__title--second animate__animated animate__lightSpeedInLeft animate__delay-0.5s'>
                     <h2>Soy Yami Sayag</h2>
-                    <h3 className='mb-1 mt-1'>Profe y creadora de Yeah Stretching</h3>
+                    <h5 className='mb-3 mt-3'>Profe y creadora de Yeah Stretching</h5>
                     <h4>Yeah comenzó en Marzo del 2021, surge como una alternativa online para <span
                         className='hero__title--b'
                     > seguir activos y en movimiento, cuidando la salud de nuestro cuerpo y nuestra mente</span>, desde el hogar.
                     </h4>
-                    <h5 className='text__highlight text-bold mt-1'>¡Todos podemos y &nbsp;</h5>
-                    <h5 className='text__highlight text-bold mb-2'>debemos hacer ejercicio!</h5>
+                    <h5 className='text__highlight text-bold mt-3'>¡Todos podemos y &nbsp;</h5>
+                    <h5 className='text__highlight text-bold mb-3'>debemos hacer ejercicio!</h5>
                     <Button
                         className='btn-primary'
                         type='button'

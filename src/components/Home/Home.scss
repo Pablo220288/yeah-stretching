@@ -78,7 +78,7 @@ h5 {
 }
 
 .services__subtitle {
-    margin-bottom: 5rem;
+    margin-bottom: 2em;
 }
 
 .empresa__container {
@@ -129,6 +129,11 @@ h5 {
     text-align: center;
     background-color: $clr-pink-700;
     border-radius: 20px;
+}
+
+.home__footer h2 {
+    font-size: $fs-md;
+    font-weight: 500;
 }
 
 @media only screen and (min-width: 330px) {
@@ -191,7 +196,7 @@ h5 {
     }
 
     .services__subtitle {
-        margin-bottom: 1.5rem;
+        margin-bottom: 1.5em;
     }
 }
 
@@ -274,7 +279,7 @@ h5 {
     }
 
     .services__subtitle {
-        margin-bottom: 3rem;
+        margin-bottom: 3em;
     }
 
 
@@ -425,12 +430,12 @@ h5 {
 
     h3 {
         font-size: $fs-xl;
-        font-family: $ff-secondary;
+        font-family: $ff-primary;
     }
 
     h4 {
         font-size: $fs-lg;
-        line-height: $lh-md;
+        // line-height: $lh-md;
     }
 
     h5 {
@@ -483,6 +488,11 @@ h5 {
 
     .btn-secondary h3 {
         font-size: $fs-lg;
+    }
+
+    .home__footer h2 {
+        font-size: $fs-xxxl;
+        font-weight: 500;
     }
 
 }

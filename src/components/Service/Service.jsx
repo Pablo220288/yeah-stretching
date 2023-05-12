@@ -182,9 +182,8 @@ export const Service = () => {
               </h2>
             </div>
             <p className="section__text">
-              Es una disciplina orientada a la conexión entre la mente y el
-              cuerpo a través de ejercicios suaves de flexibilidad, de movilidad
-              articular, de respiración y meditaciones guiadas.
+              Es un plan o programa que implementa medidas para mejorar la calidad de vida de los trabajadores. Entre los servicios que presta este paquete se incluyen: sesiones grupales online con ejercicios simples de stretching que se realizan desde la silla o el escritorio, técnicas de respiración, información sobre pausas activas, tips para mejorar la calidad de vida.
+
             </p>
             <details className="accordion">
               <summary className="accordion_title">
