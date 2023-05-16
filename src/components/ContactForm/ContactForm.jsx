@@ -1,6 +1,6 @@
 
 
-import { useRef } from 'react';
+import { useRef, useState } from 'react';
 import { Link } from "react-router-dom";
 import emailjs from '@emailjs/browser';
 
@@ -19,9 +19,26 @@ export const ContactForm = () => {
   AOS.init();
 
   const form = useRef();
+  const [ isMessageSent, setMessageSent ] = useState( false );
 
   const sendEmail = ( e ) => {
     e.preventDefault();
+
+    const email = form.current.user_email.value;
+    if ( !email ) {
+
+      Swal.fire( {
+        position: 'center',
+        icon: 'error',
+        title: 'Error',
+        text: 'Por favor, ingrese una dirección de correo.',
+        background: '#ffff',
+        color: '#D881AB',
+        showConfirmButton: false,
+        timer: 1500
+      } );
+      return;
+    }
 
     emailjs.sendForm( 'service_35jkkxn', 'template_9zqwuib', form.current, 'IpjOqTCRVvRhhiyiJ' )
       .then( ( result ) => {
@@ -30,14 +47,15 @@ export const ContactForm = () => {
           position: 'center',
           icon: 'success',
           title: 'Mensaje enviado',
-          background: '#D881AB',
-          color: '#ffff',
+          background: '#ffff',
+          color: '#D881AB',
           showConfirmButton: false,
-          timer: 1500
+          timer: 300
         } )
 
         console.log( result.text );
         e.target.reset();
+        setMessageSent( true );
 
       }, ( error ) => {
 
@@ -46,7 +64,7 @@ export const ContactForm = () => {
           icon: 'error',
           title: 'Error de envio',
           showConfirmButton: false,
-          timer: 1500
+          timer: 300
         } )
 
         console.log( error.text );
@@ -91,7 +109,9 @@ export const ContactForm = () => {
               <label>Detalle de tu consulta</label>
               <textarea name="message"></textarea>
             </div>
-            <Button type="submit" value="Send">Enviar Consulta</Button>
+            <Button type="submit" value="Send" disabled={isMessageSent}>
+              {isMessageSent ? 'Enviada' : 'Enviar'}
+            </Button>
           </form>
 
           <div className="form__redes__container ff-primary">
@@ -121,7 +141,6 @@ export const ContactForm = () => {
             </div>
           </div>
         </div>
-
       </div>
     </>
   );
