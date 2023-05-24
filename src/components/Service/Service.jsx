@@ -21,7 +21,7 @@ export const Service = () => {
   };
   return (
     <>
-      <div className="service__container">
+      <div className="service__container" id="stretchingSection">
         <div className="section__service">
           <div className="section__img"></div>
           <div className="section__text__container">
@@ -48,20 +48,9 @@ export const Service = () => {
                 </div>
               </summary>
             </details>
-            <details className="accordion">
-              <summary className="accordion_title">
-                <IoIosArrowForward className="accordion__icon" />
-                Edades
-              </summary>
-              <summary className="accordion_text">
-                <div>
-                  <p>30 en adelante.</p>
-                </div>
-              </summary>
-            </details>
-            <Link to="/contact" className="btn-primary">
+            <a href="/contact/#contactSection" className="btn-primary" id="pilatesMatSection">
               Contratar
-            </Link>
+            </a>
           </div>
         </div>
         <div className="section__service pilatesMat">
@@ -92,20 +81,9 @@ export const Service = () => {
                 </div>
               </summary>
             </details>
-            <details className="accordion">
-              <summary className="accordion_title">
-                <IoIosArrowForward className="accordion__icon" />
-                Edades
-              </summary>
-              <summary className="accordion_text">
-                <div>
-                  <p>30 en adelante.</p>
-                </div>
-              </summary>
-            </details>
-            <Link to="/contact" className="btn-primary">
+            <a href="/contact/#contactSection" className="btn-primary" id="stretchingRestaurativoSection">
               Contratar
-            </Link>
+            </a>
           </div>
         </div>
         <div className="section__service stretchingRestaurativo">
@@ -140,21 +118,9 @@ export const Service = () => {
                 </div>
               </summary>
             </details>
-            <details className="accordion">
-              <summary className="accordion_title">
-                <IoIosArrowForward className="accordion__icon" />
-                Edades
-              </summary>
-              <summary className="accordion_text">
-                <div>
-                  <p>30 en adelante.</p>
-                </div>
-              </summary>
-            </details>
-
-            <Link to="/contact" className="btn-primary">
+            <a href="/contact/#contactSection" className="btn-primary" id="bienestarEmpresasSection">
               Contratar
-            </Link>
+            </a>
           </div>
         </div>
         <div className="section__service bienestarEmpresas">
@@ -193,20 +159,9 @@ export const Service = () => {
                 </div>
               </summary>
             </details>
-            <details className="accordion">
-              <summary className="accordion_title">
-                <IoIosArrowForward className="accordion__icon" />
-                Edades
-              </summary>
-              <summary className="accordion_text">
-                <div>
-                  <p>30 en adelante.</p>
-                </div>
-              </summary>
-            </details>
-            <Link to="/contact" className="btn-primary">
+            <a href="/contact/#contactSection" className="btn-primary">
               Contratar
-            </Link>
+            </a>
             <div>
               <p className="service__appointment">
                 “Es fundamental garantizar que los empleados de una organización

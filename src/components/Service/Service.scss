@@ -84,7 +84,7 @@
       flex-direction: column;
       justify-content: center;
       align-items: flex-start;
-      gap: 5px;
+      gap: 10px;
 
       .section__title {
         font-family: $ff-secondary;
@@ -94,7 +94,7 @@
       }
 
       .section__text {
-        font-size: 0.6rem;
+        font-size: 0.8rem;
         line-height: 12px;
         font-family: $ff-primary;
       }
@@ -125,7 +125,7 @@
 
         .accordion_text {
           font-family: $ff-primary;
-          font-size: 0.55rem;
+          font-size: 0.75rem;
           padding: 0px 0px 5px 20px;
         }
       }

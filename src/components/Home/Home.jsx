@@ -55,15 +55,23 @@ export const Home = () => {
           <h5 className="text__highlight text-bold mb-3">
             debemos hacer ejercicio!
           </h5>
+          <h4 className="text__hero__end">
+            Por eso, mi gran motivación es que mejores tu salud a través de mis
+            clases, que sientas{" "}
+            <span className="hero__title--b">
+              {" "}
+              los resultados de forma progresiva y que puedas conectar con eso
+              tiempo de
+            </span>
+            autocuidado para vos.
+          </h4>
           <Button
             className="btn-primary"
             type="button"
             aria-label="Obtén más información sobre mí"
             title="Haz clic aquí para conocer más acerca de mí"
           >
-            <Link to="/about">
-              Conocé más sobre mi &gt;
-            </Link>
+            <a href="/about/#pageAbout">Conocé más sobre mi &gt;</a>
           </Button>
         </article>
       </section>
@@ -94,10 +102,13 @@ export const Home = () => {
         >
           <h2 className="mt-2 mb-1">Si tenés una Empresa,</h2>
           <p className="mb-2">
-            Invertí en la salud y bienestar corporativo para permitir que tu
-            capital humano y empresarial se vea mejorado
+            Invertí en la salud y bienestar pa tu recurso más valioso: el capital humano.
           </p>
-          <Button className="btn-primary"><Link to="/contact">Quiero saber más &gt;</Link></Button>
+          <Button className="btn-primary">
+            <a href="/service/#bienestarEmpresasSection">
+              Quiero saber más &gt;
+            </a>
+          </Button>
         </div>
 
         <div className="empresa__img">
@@ -114,7 +125,7 @@ export const Home = () => {
           <div className="reviews-text__container">
             <div className="reviews-title">
               <h2 className=" text__highlight mt-1 mb-2">
-                Reviews&nbsp;
+                Opiniones&nbsp;
                 <span className="text__highlight">
                   <BiHeart />
                   &nbsp;
@@ -122,8 +133,7 @@ export const Home = () => {
               </h2>
             </div>
             <p className="reviews__text mb-2">
-              Las opiniones, valoraciones o testimonios de nuestros clientes nos
-              importan ¡y mucho!
+              Los testimonios de nuestros clientes nos importan mucho
             </p>
           </div>
 

@@ -1,22 +1,23 @@
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 import AOS from "aos";
 
-import { TbBolt } from "react-icons/tb";
+import { TbBolt, TbBallVolleyball } from "react-icons/tb";
 import { FiCoffee, FiThumbsUp, FiStar } from "react-icons/fi";
 
-import { Button } from '../Button/Button';
+import { Button } from "../Button/Button";
 
 export const About = () => {
-
   AOS.init();
 
   return (
     <>
+      <div id="pageAbout"></div>
       <div className="about__container">
         <div className="about__header">
           <div className="header__text animate__animated animate__lightSpeedInLeft animate__delay-0.5s">
-            <h3>Hola!
+            <h3>
+              Hola!
               <br />
               Soy Yami Sayag
             </h3>
@@ -26,8 +27,7 @@ export const About = () => {
                 <span></span>
               </h4>
               <h4 className="text__highlight">
-                Pilates Mat, Meditación y
-                <span></span>
+                Pilates Mat, Meditación y&nbsp;<span> </span>
               </h4>
               <h4 className="text__highlight">
                 Esferodinamia
@@ -82,23 +82,19 @@ export const About = () => {
           <div className="about__redes__container">
             <div className="redes__container">
               <div className="redes__icon">
-                <FiThumbsUp className="icon" />
-              </div>
-              <span className="redes__text animate__animated animate__lightSpeedInRight animate__delay-0.5s">
-                Canceriana con ascendente en Leo
-              </span>
-            </div>
-            <div className="redes__container">
-              <div className="redes__icon">
                 <TbBolt className="icon" />
               </div>
-              <span className="redes__text animate__animated animate__lightSpeedInRight animate__delay-1s">Inquieta, sociable y creativa</span>
+              <span className="redes__text animate__animated animate__lightSpeedInRight animate__delay-1s">
+                Inquieta, sociable y creativa
+              </span>
             </div>
             <div className="redes__container">
               <div className="redes__icon">
                 <FiStar className="icon" />
               </div>
-              <span className="redes__text animate__animated animate__lightSpeedInRight animate__delay-0.5s">Emprendedora empedernida</span>
+              <span className="redes__text animate__animated animate__lightSpeedInRight animate__delay-0.5s">
+                Emprendedora empedernida
+              </span>
             </div>
             <div className="redes__container">
               <div className="redes__icon">
@@ -108,33 +104,47 @@ export const About = () => {
                 Amante del mate y del café con leche
               </span>
             </div>
+            <div className="redes__container">
+              <div className="redes__icon">
+                <TbBallVolleyball className="icon" />
+              </div>
+              <span className="redes__text animate__animated animate__lightSpeedInRight animate__delay-0.5s">
+                Fan del Voley
+              </span>
+            </div>
           </div>
         </div>
         <div className="about__curriculum">
-          <h2 className='text__highlight' data-aos='fade-right' data-aos-offset='200'>
+          <h2
+            className="text__highlight"
+            data-aos="fade-right"
+            data-aos-offset="200"
+          >
             Mis Capacitaciones
           </h2>
-          <span className='ff-primary'>¡Descargá mi CV para conocerme más!</span>
+          <span className="ff-primary">
+            ¡Descargá mi CV para conocerme más!
+          </span>
 
           <Link
-            data-aos='fade-up'
-            data-aos-offset='200'
-            to='https://res.cloudinary.com/ferjen/image/upload/v1683841870/yeah_stretching/assets/CV-SayagYamila-2023_uyyye1.pdf'
-            target='_blank'
-            rel='noopener noreferrer'
-            title='Descargar CV en formato PDF'
+            data-aos="fade-up"
+            data-aos-offset="200"
+            to="https://drive.google.com/drive/folders/1cvGK_zS3_eiUeN12WX9r0cckFgfqwUAb?usp=share_link"
+            target="_blank"
+            rel="noopener noreferrer"
+            title="Descargar CV en formato PDF"
           >
-            <Button className='ff-primary'>Descargar</Button>
+            <Button className="ff-primary">Descargar</Button>
           </Link>
-
-
         </div>
-        <div className="about__footer" data-aos='fade-right' data-aos-offset='200'>
-          <h2 className='text__highlight--white'>
-            Movimiento es vida…
-          </h2>
+        <div
+          className="about__footer"
+          data-aos="fade-right"
+          data-aos-offset="200"
+        >
+          <h2 className="text__highlight--white">Movimiento es vida…</h2>
           <h2>y quiero acompañarte en ese proceso.</h2>
-          <h2 >¡Te espero!</h2>
+          <h2>¡Te espero!</h2>
         </div>
       </div>
     </>
