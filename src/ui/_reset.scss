@@ -25,6 +25,11 @@
     // background: linear-gradient(180deg, rgba(216, 129, 171, 1) 50%, rgba(255, 255, 255, 0) 100%);
 }
 
+html,
+body {
+    scroll-behavior: smooth;
+}
+
 body {
     color: $clr-black;
     font-size: $ff-primary;
