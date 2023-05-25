@@ -20,25 +20,61 @@ export const ContactForm = () => {
 
   const form = useRef();
   const [ isMessageSent, setMessageSent ] = useState( false );
+  const [ isSubmitting, setIsSubmitting ] = useState( false );
 
   const sendEmail = ( e ) => {
     e.preventDefault();
 
+    const name = form.current.user_name.value;
     const email = form.current.user_email.value;
-    if ( !email ) {
+    const message = form.current.message.value;
 
+    // Name validation
+    if ( !name || !/^[a-z ,.'-]+$/i.test( name ) ) {
       Swal.fire( {
         position: 'center',
         icon: 'error',
         title: 'Error',
-        text: 'Por favor, ingrese una dirección de correo.',
+        text: 'Por favor, ingrese un nombre correcto .',
         background: '#ffff',
         color: '#D881AB',
         showConfirmButton: false,
-        timer: 1500
+        timer: 2500
       } );
       return;
-    }
+    };
+
+    // Email validation
+    if ( !email || !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test( email ) ) {
+      Swal.fire( {
+        position: 'center',
+        icon: 'error',
+        title: 'Error',
+        text: 'Por favor, ingrese un correo válido.',
+        background: '#ffff',
+        color: '#D881AB',
+        showConfirmButton: false,
+        timer: 2500
+      } );
+      return;
+    };
+
+    // Message validation
+    if ( !message ) {
+      Swal.fire( {
+        position: 'center',
+        icon: 'error',
+        title: 'Error',
+        text: 'Por favor, ingrese un mensaje.',
+        background: '#ffff',
+        color: '#D881AB',
+        showConfirmButton: false,
+        timer: 2500
+      } );
+      return;
+    };
+
+    setIsSubmitting( true );
 
     emailjs.sendForm( 'service_35jkkxn', 'template_9zqwuib', form.current, 'IpjOqTCRVvRhhiyiJ' )
       .then( ( result ) => {
@@ -50,16 +86,13 @@ export const ContactForm = () => {
           background: '#ffff',
           color: '#D881AB',
           showConfirmButton: false,
-<<<<<<< HEAD
           timer: 2500
-=======
-          timer: 300
->>>>>>> ba667e8c82b9b5c665d6cc9f4b058bc8e776875d
-        } )
+        } );
 
-        console.log( result.text );
-        e.target.reset();
+        // Reset form and re-enable submit button after 5 minutes
+        form.current.reset();
         setMessageSent( true );
+        setIsSubmitting( false );
 
       }, ( error ) => {
 
@@ -68,11 +101,7 @@ export const ContactForm = () => {
           icon: 'error',
           title: 'Error de envio',
           showConfirmButton: false,
-<<<<<<< HEAD
           timer: 2500
-=======
-          timer: 300
->>>>>>> ba667e8c82b9b5c665d6cc9f4b058bc8e776875d
         } )
 
         console.log( error.text );
@@ -117,7 +146,7 @@ export const ContactForm = () => {
               <label>Detalle de tu consulta</label>
               <textarea name="message"></textarea>
             </div>
-            <Button type="submit" value="Send" disabled={isMessageSent}>
+            <Button type="submit" value="Send" disabled={isMessageSent || isSubmitting}>
               {isMessageSent ? 'Enviada' : 'Enviar'}
             </Button>
           </form>

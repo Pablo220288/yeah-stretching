@@ -11,3 +11,5 @@ export * from './Navbar/Navbar';
 export * from './Reviews/Reviews';
 export * from './ReviewsItem/ReviewsItem';
 export * from './Service/Service';
+
+// export { Navbar } from './Navbar/Navbar';

@@ -12,14 +12,16 @@ export const Navbar = () => {
   const openClose = () => {
     open === "navbar__is-active" ? setOpen( "" ) : setOpen( "navbar__is-active" );
   };
+
   const closeMenu = () => {
     setOpen( "" );
   };
+
   return (
     <>
       <nav className="navbar__container">
         <NavLink className={`navbar__logo ${open}`} to="/home">
-          <img className="logo__nav" src={logo} alt="yeha stretching logo" />
+          <img className="logo__nav" src={logo} alt="Yeah stretching logo" />
         </NavLink>
         <div className="navbar__link__container">
           <NavLink className="navbar__link" to="/home">

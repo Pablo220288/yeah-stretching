@@ -189,11 +189,11 @@
     }
 
     &__hamburger {
-      display: none;
+      opacity: 0;
     }
-  }
 
-  .navbar__mobile {
-    opacity: 0;
+    .navbar__mobile {
+      opacity: 0;
+    }
   }
 }

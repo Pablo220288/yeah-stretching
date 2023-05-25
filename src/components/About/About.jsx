@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import AOS from "aos";
 
 import { TbBolt, TbBallVolleyball } from "react-icons/tb";
-import { FiCoffee, FiThumbsUp, FiStar } from "react-icons/fi";
+import { FiCoffee, FiStar } from "react-icons/fi";
 
 import { Button } from "../Button/Button";
 

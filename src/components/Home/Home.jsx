@@ -126,10 +126,7 @@ export const Home = () => {
             <div className="reviews-title">
               <h2 className=" text__highlight mt-1 mb-2">
                 Opiniones&nbsp;
-                <span className="text__highlight">
-                  <BiHeart />
-                  &nbsp;
-                </span>
+                <BiHeart />
               </h2>
             </div>
             <p className="reviews__text mb-2">
@@ -153,6 +150,6 @@ export const Home = () => {
           </div>
         </div>
       </section>
-    </main>
+    </main >
   );
 };
