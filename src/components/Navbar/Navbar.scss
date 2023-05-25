@@ -43,6 +43,7 @@
 
   &__hamburger {
     display: block;
+    opacity: 1;
     position: relative;
     z-index: 100;
     user-select: none;
@@ -189,7 +190,7 @@
     }
 
     &__hamburger {
-      opacity: 0;
+      display: none;
     }
 
     .navbar__mobile {

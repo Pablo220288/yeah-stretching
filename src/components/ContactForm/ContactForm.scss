@@ -19,7 +19,7 @@
 
     .hero__text {
       position: absolute;
-      top: 35vh;
+      top: 25vh;
       left: 10vw;
       bottom: 20%;
       left: 20px;
@@ -143,6 +143,7 @@
           background-color: $clr-pink-700;
           animation: morph 5s infinite ease-in-out;
           cursor: pointer;
+
           @keyframes morph {
             0% {
               border-radius: 58% 42% 42% 58% / 35% 50% 50% 65%;
@@ -205,11 +206,16 @@
 }
 
 @media (max-width: 390px) {
+  .hero__text {
+    position: absolute;
+    top: 35vh;
+  }
+
   .hero__img--profe {
     position: absolute;
     top: 0;
     right: 0;
-    height: 98%;
+    height: 90%;
   }
 }
 
@@ -255,7 +261,7 @@
           margin-bottom: 20px;
 
           h2 {
-            font-size: 3rem;
+            font-size: 2.5rem;
           }
         }
       }
@@ -278,14 +284,14 @@
 
       .hero__text {
         position: absolute;
-        bottom: 25vh;
+        bottom: 5vh;
         // bottom: 220px;
 
         .text_title {
           margin-bottom: 20px;
 
           h2 {
-            font-size: 3rem;
+            font-size: 2.8rem;
           }
         }
       }
