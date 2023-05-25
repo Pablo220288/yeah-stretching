@@ -32,7 +32,7 @@ export const Footer = () => {
         </Link>
         <Link
           className="footer__link"
-          to="https://api.whatsapp.com/qr/WCIAORYRAY2ZN1?autoload=1&app_absent=0"
+          to="https://api.whatsapp.com/send?phone=5491132197694"
           target="_blank"
         >
           <FaWhatsapp />

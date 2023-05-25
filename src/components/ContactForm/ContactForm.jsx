@@ -50,7 +50,11 @@ export const ContactForm = () => {
           background: '#ffff',
           color: '#D881AB',
           showConfirmButton: false,
+<<<<<<< HEAD
+          timer: 2500
+=======
           timer: 300
+>>>>>>> ba667e8c82b9b5c665d6cc9f4b058bc8e776875d
         } )
 
         console.log( result.text );
@@ -64,7 +68,11 @@ export const ContactForm = () => {
           icon: 'error',
           title: 'Error de envio',
           showConfirmButton: false,
+<<<<<<< HEAD
+          timer: 2500
+=======
           timer: 300
+>>>>>>> ba667e8c82b9b5c665d6cc9f4b058bc8e776875d
         } )
 
         console.log( error.text );
@@ -74,7 +82,7 @@ export const ContactForm = () => {
 
   return (
     <>
-      <div className="main__form">
+      <div className="main__form" id='contactSection'>
         <div className="hero__form">
           <img className="hero__img" src="https://res.cloudinary.com/ferjen/image/upload/v1683587895/yeah_stretching/icons/form_nuf5gx.png" alt="Banner con ondas rosado" />
 
@@ -133,7 +141,7 @@ export const ContactForm = () => {
               </Link>
               <Link
                 className="redes__icon"
-                to="https://api.whatsapp.com/qr/WCIAORYRAY2ZN1?autoload=1&app_absent=0"
+                to="https://api.whatsapp.com/send?phone=5491132197694"
                 target="_blank"
               >
                 <ImWhatsapp className="icon" />
