@@ -129,7 +129,7 @@ export const About = () => {
           <Link
             data-aos="fade-up"
             data-aos-offset="200"
-            to="https://drive.google.com/file/d/1V9HTAylyaxIeVuM44oKSExZ8ZRIY972o/view?usp=drive_link"
+            to="https://drive.google.com/drive/folders/1cvGK_zS3_eiUeN12WX9r0cckFgfqwUAb?usp=share_link"
             target="_blank"
             rel="noopener noreferrer"
             title="Descargar CV en formato PDF"
