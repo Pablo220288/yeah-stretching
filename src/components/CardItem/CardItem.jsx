@@ -3,6 +3,9 @@ import { Link } from "react-router-dom";
 export const CardItem = ( { servicio } ) => {
   const { title, pills, imgUrl, altTxt, link } = servicio;
 
+  console.log( link );
+
+
   return (
     <div className="card-container">
       <div className="card-container__image">

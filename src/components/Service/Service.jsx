@@ -28,18 +28,45 @@ export const Service = () => {
   useEffect( () => {
     const { hash } = window.location;
     if ( hash === "#stretchingSection" && stretchingSectionRef.current ) {
-      stretchingSectionRef.current.scrollIntoView( { behavior: "smooth" } );
+      setTimeout( () => {
+        stretchingSectionRef.current.scrollIntoView( { behavior: "smooth" } );
+      }, 100 );
     } else if ( hash === "#pilatesMat" && pilatesMatRef.current ) {
-      pilatesMatRef.current.scrollIntoView( { behavior: "smooth" } );
+      setTimeout( () => {
+        pilatesMatRef.current.scrollIntoView( { behavior: "smooth" } );
+      }, 100 );
     } else if (
       hash === "#stretchingRestaurativo" &&
       stretchingRestaurativoRef.current
     ) {
-      stretchingRestaurativoRef.current.scrollIntoView( { behavior: "smooth" } );
-    } else if ( hash === "#bienestarEmpresas" && bienestarEmpresasRef.current ) {
-      bienestarEmpresasRef.current.scrollIntoView( { behavior: "smooth" } );
+      setTimeout( () => {
+        stretchingRestaurativoRef.current.scrollIntoView( { behavior: "smooth" } );
+      }, 100 );
+    } else if (
+      hash === "#bienestarEmpresas" &&
+      bienestarEmpresasRef.current
+    ) {
+      setTimeout( () => {
+        bienestarEmpresasRef.current.scrollIntoView( { behavior: "smooth" } );
+      }, 100 );
     }
   }, [] );
+
+  // useEffect( () => {
+  //   const { hash } = window.location;
+  //   if ( hash === "#stretchingSection" && stretchingSectionRef.current ) {
+  //     stretchingSectionRef.current.scrollIntoView( { behavior: "smooth" } );
+  //   } else if ( hash === "#pilatesMat" && pilatesMatRef.current ) {
+  //     pilatesMatRef.current.scrollIntoView( { behavior: "smooth" } );
+  //   } else if (
+  //     hash === "#stretchingRestaurativo" &&
+  //     stretchingRestaurativoRef.current
+  //   ) {
+  //     stretchingRestaurativoRef.current.scrollIntoView( { behavior: "smooth" } );
+  //   } else if ( hash === "#bienestarEmpresas" && bienestarEmpresasRef.current ) {
+  //     bienestarEmpresasRef.current.scrollIntoView( { behavior: "smooth" } );
+  //   }
+  // }, [] );
 
   return (
     <>
