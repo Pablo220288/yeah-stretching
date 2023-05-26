@@ -6,7 +6,7 @@ import AOS from "aos";
 import { CardContainer } from "../CardContainer/CardContainer";
 import { Reviews } from "../Reviews/Reviews";
 import { Button } from "../Button/Button";
-import { Link } from "react-router-dom";
+
 
 export const Home = () => {
   AOS.init();
@@ -16,18 +16,17 @@ export const Home = () => {
       <section className="hero__curve">
         <img
           className="hero__curve"
-          src="https://res.cloudinary.com/ferjen/image/upload/v1683603824/yeah_stretching/icons/home-banner_wuqq1o.png"
+          src="https://res.cloudinary.com/ferjen/image/upload/v1685068539/yeah_stretching/icons/animated-waves_aa76ti.svg"
           alt="Imagen de curvas rosadas"
         />
+
       </section>
 
       <section className="hero__container">
         <article className="hero__title animate__animated animate__lightSpeedInLeft">
-          <h2>
-            Tu cuerpo es el único lugar donde se puede vivir,{" "}
+          <h2>Tu cuerpo es el único lugar donde se puede vivir,{" "}
             <span className="text__highlight">cuida de él.</span>
           </h2>
-
           <img
             className="hero__icon-arrow"
             src="https://res.cloudinary.com/ferjen/image/upload/v1681962589/yeah_stretching/icons/ys-icon-down-arrow_bcbfv1.svg"
@@ -36,9 +35,19 @@ export const Home = () => {
           <h2>¡Hola!</h2>
         </article>
 
-        <article className="hero__title--second animate__animated animate__lightSpeedInLeft animate__delay-0.5s">
+        <article className="hero__img animate__animated animate__lightSpeedInRight">
+          <img
+            src="https://res.cloudinary.com/ferjen/image/upload/v1685068676/yeah_stretching/profe/img-prof-01-1_ge9drw.png"
+            alt="Prof. Yamila Sayag" />
+
+        </article>
+
+        <article className="hero__title--middle animate__animated animate__lightSpeedInLeft">
           <h2>Soy Yami Sayag</h2>
           <h5 className="mb-3 mt-3">Profe y creadora de Yeah Stretching</h5>
+        </article>
+
+        <article className="hero__title--second animate__animated animate__lightSpeedInLeft animate__delay-0.5s">
           <h4>
             Yeah comenzó en Marzo del 2021, surge como una alternativa online
             para{" "}
@@ -49,12 +58,17 @@ export const Home = () => {
             </span>
             , desde el hogar.
           </h4>
+
           <h5 className="text__highlight text-bold mt-3">
             ¡Todos podemos y &nbsp;
           </h5>
           <h5 className="text__highlight text-bold mb-3">
             debemos hacer ejercicio!
           </h5>
+
+        </article>
+
+        <article className="hero__title--third animate__animated animate__lightSpeedInLeft animate__delay-0.5s">
           <h4 className="text__hero__end">
             Por eso, mi gran motivación es que mejores tu salud a través de mis
             clases, que sientas{" "}
