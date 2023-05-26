@@ -52,22 +52,6 @@ export const Service = () => {
     }
   }, [] );
 
-  // useEffect( () => {
-  //   const { hash } = window.location;
-  //   if ( hash === "#stretchingSection" && stretchingSectionRef.current ) {
-  //     stretchingSectionRef.current.scrollIntoView( { behavior: "smooth" } );
-  //   } else if ( hash === "#pilatesMat" && pilatesMatRef.current ) {
-  //     pilatesMatRef.current.scrollIntoView( { behavior: "smooth" } );
-  //   } else if (
-  //     hash === "#stretchingRestaurativo" &&
-  //     stretchingRestaurativoRef.current
-  //   ) {
-  //     stretchingRestaurativoRef.current.scrollIntoView( { behavior: "smooth" } );
-  //   } else if ( hash === "#bienestarEmpresas" && bienestarEmpresasRef.current ) {
-  //     bienestarEmpresasRef.current.scrollIntoView( { behavior: "smooth" } );
-  //   }
-  // }, [] );
-
   return (
     <>
       <div className="service__container">
