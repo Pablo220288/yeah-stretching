@@ -8,21 +8,21 @@ import { Link } from "react-router-dom";
 export const Service = () => {
   AOS.init();
 
-  const [openMenu, setOpenMenu] = useState("");
-  const [stretchingAge, setStretchingAge] = useState("");
+  const [ openMenu, setOpenMenu ] = useState( "" );
+  const [ stretchingAge, setStretchingAge ] = useState( "" );
 
   const openClose = () => {
-    openMenu === "openMenu" ? setOpenMenu("") : setOpenMenu("openMenu");
+    openMenu === "openMenu" ? setOpenMenu( "" ) : setOpenMenu( "openMenu" );
   };
   const openStretchingAge = () => {
     stretchingAge === "openMenu"
-      ? setStretchingAge("")
-      : setStretchingAge("openMenu");
+      ? setStretchingAge( "" )
+      : setStretchingAge( "openMenu" );
   };
   return (
     <>
-      <div className="service__container" id="stretchingSection">
-        <div className="section__service">
+      <div className="service__container">
+        <div className="section__service" id="stretchingSection">
           <div className="section__img"></div>
           <div className="section__text__container">
             <h2 className="section__title text__highlight header__text animate__animated animate__lightSpeedInRight animate__delay-0.5s">
@@ -30,8 +30,7 @@ export const Service = () => {
             </h2>
             <p className="section__text">
               Es una disciplina orientada a estirar los músculos de nuestro
-              cuerpo y a ampliar nuestro rango articular. Se trabaja a través de
-              movimientos suaves y conscientes.
+              cuerpo y a ampliar nuestro rango articular. Se trabaja a través de movimientos suaves y conscientes.
             </p>
             <details className="accordion">
               <summary className="accordion_title">
@@ -40,7 +39,7 @@ export const Service = () => {
               </summary>
               <summary className="accordion_text">
                 <div>
-                  <p>
+                  <p className="accordion_text">
                     Reducir las emociones negativas, adquirir habilidades para
                     controlar el estrés, aumentar la autoconciencia, enfocarse
                     en el presente, disminución de dolores corporales.
@@ -48,18 +47,28 @@ export const Service = () => {
                 </div>
               </summary>
             </details>
-            <a href="/contact/#contactSection" className="btn-primary" id="pilatesMatSection">
-              Contratar
-            </a>
+            <Link to="/contact"
+              className="btn-primary"
+              type="button"
+              aria-label="Obtén más información sobre mí"
+              title="Haz clic aquí para conocer más acerca de mí"
+            >Contratar
+            </Link>
           </div>
         </div>
-        <div className="section__service pilatesMat">
+        <div className="section__service pilatesMat" id='pilatesMat'>
           <div className="section__img"></div>
           <div className="section__text__container">
             <div className="section__text--oneLine">
-              <h2 className="section__title text__highlight header__text animate__animated animate__lightSpeedInLeft animate__delay-0.5s">
-                Pilates Mat
-              </h2>
+              <div className='d-flex'>
+                <h2 className="section__title text__highlight header__text animate__animated animate__lightSpeedInRight animate__delay-0.5s">
+                  Pilates&nbsp;
+                </h2>
+                <br />
+                <h2 className="section__title text__highlight header__text animate__animated animate__lightSpeedInRight animate__delay-0.5s">
+                  Mat
+                </h2>
+              </div>
             </div>
             <p className="section__text">
               Es una disciplina orientada a fortalecer nuestro cuerpo, a través
@@ -73,7 +82,7 @@ export const Service = () => {
               </summary>
               <summary className="accordion_text">
                 <div>
-                  <p>
+                  <p className="accordion_text">
                     Fortalecimiento de músculos, aumento de la flexibilidad,
                     conexión mente - cuerpo, previene lesiones, corrección
                     postural.
@@ -81,12 +90,16 @@ export const Service = () => {
                 </div>
               </summary>
             </details>
-            <a href="/contact/#contactSection" className="btn-primary" id="stretchingRestaurativoSection">
-              Contratar
-            </a>
+            <Link to="/contact"
+              className="btn-primary"
+              type="button"
+              aria-label="Obtén más información sobre mí"
+              title="Haz clic aquí para conocer más acerca de mí"
+            >Contratar
+            </Link>
           </div>
         </div>
-        <div className="section__service stretchingRestaurativo">
+        <div className="section__service stretchingRestaurativo" id='stretchingRestaurativo'>
           <div className="section__img"></div>
           <div className="section__text__container">
             <div>
@@ -110,7 +123,7 @@ export const Service = () => {
               </summary>
               <summary className="accordion_text">
                 <div>
-                  <p>
+                  <p className="accordion_text">
                     Reducir las emociones negativas, adquirir habilidades para
                     controlar el estrés, aumentar la autoconciencia, enfocarse
                     en el presente, disminución de dolores corporales.
@@ -118,12 +131,16 @@ export const Service = () => {
                 </div>
               </summary>
             </details>
-            <a href="/contact/#contactSection" className="btn-primary" id="bienestarEmpresasSection">
-              Contratar
-            </a>
+            <Link to="/contact"
+              className="btn-primary"
+              type="button"
+              aria-label="Obtén más información sobre mí"
+              title="Haz clic aquí para conocer más acerca de mí"
+            >Contratar
+            </Link>
           </div>
         </div>
-        <div className="section__service bienestarEmpresas">
+        <div className="section__service bienestarEmpresas" id='bienestarEmpresas'>
           <div className="section__img"></div>
           <div className="section__text__container">
             <div>
@@ -150,7 +167,7 @@ export const Service = () => {
               </summary>
               <summary className="accordion_text">
                 <div>
-                  <p>
+                  <p className="accordion_text">
                     Disminución de conflictos entre empleados, estimulación de
                     la creatividad, cuidado de la salud mental del equipo, menos
                     ausentismo, mayor compromiso, disminución en el número de
@@ -159,9 +176,13 @@ export const Service = () => {
                 </div>
               </summary>
             </details>
-            <a href="/contact/#contactSection" className="btn-primary">
-              Contratar
-            </a>
+            <Link to="/contact"
+              className="btn-primary"
+              type="button"
+              aria-label="Obtén más información sobre mí"
+              title="Haz clic aquí para conocer más acerca de mí"
+            >Contratar
+            </Link>
             <div>
               <p className="service__appointment">
                 “Es fundamental garantizar que los empleados de una organización
@@ -172,7 +193,7 @@ export const Service = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div >
     </>
   );
 };

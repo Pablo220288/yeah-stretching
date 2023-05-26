@@ -1,3 +1,7 @@
+.d-flex {
+  display: flex;
+}
+
 .service__container {
   width: 90%;
   max-width: 1000px;
@@ -95,8 +99,8 @@
       }
 
       .section__text {
-        font-size: 0.8rem;
-        line-height: 12px;
+        font-size: 1rem;
+        line-height: 1.5em;
         font-family: $ff-primary;
       }
 
@@ -126,7 +130,7 @@
 
         .accordion_text {
           font-family: $ff-primary;
-          font-size: 0.75rem;
+          font-size: 1.5rem;
           padding: 0px 0px 5px 20px;
         }
       }
@@ -333,8 +337,9 @@
         }
 
         .section__text {
-          font-size: 0.9rem;
-          line-height: 17px;
+          line-height: 1.5em;
+          font-size: 1rem;
+          line-height: 1.5em;
         }
 
         details.accordion {
@@ -345,7 +350,7 @@
 
           .accordion_text {
             font-family: $ff-primary;
-            font-size: 0.75rem;
+            font-size: 1rem;
           }
         }
 

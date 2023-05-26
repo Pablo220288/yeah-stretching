@@ -6,6 +6,7 @@ import AOS from "aos";
 import { CardContainer } from "../CardContainer/CardContainer";
 import { Reviews } from "../Reviews/Reviews";
 import { Button } from "../Button/Button";
+import { Link } from 'react-router-dom';
 
 
 export const Home = () => {
@@ -80,14 +81,22 @@ export const Home = () => {
             </span>
             autocuidado para vos.
           </h4>
-          <Button
+          {/* <Button
+            className="btn-primary"
+            type="button"
+            aria-label="Obtén más información sobre mí"
+            title="Haz clic aquí para conocer más acerca de mí"
+          > */}
+          {/* </Button> */}
+          <Link
+            to="/about"
             className="btn-primary"
             type="button"
             aria-label="Obtén más información sobre mí"
             title="Haz clic aquí para conocer más acerca de mí"
           >
-            <a href="/about/#pageAbout">Conocé más sobre mi &gt;</a>
-          </Button>
+            Conocé más sobre mi &gt;
+          </Link>
         </article>
       </section>
 

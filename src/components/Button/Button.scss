@@ -18,6 +18,14 @@
     &:hover {
         background-color: $clr-pink-800;
     }
+
+    & .disabled {
+        background-color: $clr-grey-600;
+    }
+}
+
+.disabled {
+    background-color: $clr-grey-600;
 }
 
 .btn-primary__card {

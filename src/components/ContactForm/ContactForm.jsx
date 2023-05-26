@@ -22,6 +22,8 @@ export const ContactForm = () => {
   const [ isMessageSent, setMessageSent ] = useState( false );
   const [ isSubmitting, setIsSubmitting ] = useState( false );
 
+  const buttonClassName = `btn-primary ${isMessageSent || isSubmitting ? 'disabled' : ''}`;
+
   const sendEmail = ( e ) => {
     e.preventDefault();
 
@@ -146,7 +148,12 @@ export const ContactForm = () => {
               <label>Detalle de tu consulta</label>
               <textarea name="message"></textarea>
             </div>
-            <Button type="submit" value="Send" disabled={isMessageSent || isSubmitting}>
+            <Button
+              className="btn-primary"
+              type="submit"
+              value="Send"
+              disabled={isMessageSent || isSubmitting}
+            >
               {isMessageSent ? 'Enviada' : 'Enviar'}
             </Button>
           </form>

@@ -37,6 +37,9 @@
 .hero__title--third {
   grid-row: 4 / span 1;
   grid-column: 1 / span 2;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
 }
 
 
@@ -84,6 +87,8 @@ h5 {
 
 .btn-primary {
   font-size: $fs-xs;
+  display: flex;
+  // width: 80%;
 }
 
 .services__container,
