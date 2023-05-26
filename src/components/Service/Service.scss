@@ -110,7 +110,7 @@
         .accordion_title {
           color: $clr-black;
           font-family: $ff-primary;
-          font-size: 0.8rem;
+          font-size: 1rem;
           list-style: none;
           display: flex;
           align-items: center;
@@ -130,7 +130,7 @@
 
         .accordion_text {
           font-family: $ff-primary;
-          font-size: 1.5rem;
+          font-size: 1rem;
           padding: 0px 0px 5px 20px;
         }
       }
