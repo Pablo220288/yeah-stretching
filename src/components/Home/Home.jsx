@@ -128,11 +128,17 @@ export const Home = () => {
           <p className="mb-2">
             Invertí en la salud y bienestar pa tu recurso más valioso: el capital humano.
           </p>
-          <Button className="btn-primary">
-            <a href="/service/#bienestarEmpresasSection">
+          <div className='empresa__container--btn'>
+            <Link
+              to="/service/#bienestarEmpresas"
+              className="btn-primary"
+              type="button"
+              aria-label="Obtén más información sobre Empresas"
+              title="Haz clic aquí para conocer más acerca de planes para Empresas"
+            >
               Quiero saber más &gt;
-            </a>
-          </Button>
+            </Link>
+          </div>
         </div>
 
         <div className="empresa__img">
