@@ -16,7 +16,8 @@ export const Home = () => {
       <section className="hero__curve">
         <img
           className="hero__curve"
-          src="https://res.cloudinary.com/ferjen/image/upload/v1685068539/yeah_stretching/icons/animated-waves_aa76ti.svg"
+          src="https://res.cloudinary.com/ferjen/image/upload/v1685076073/yeah_stretching/icons/ys-animated-waves_qp7ro9.svg"
+          // src="https://res.cloudinary.com/ferjen/image/upload/v1685068539/yeah_stretching/icons/animated-waves_aa76ti.svg"
           alt="Imagen de curvas rosadas"
         />
 
