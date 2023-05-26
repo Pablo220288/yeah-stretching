@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { IoIosArrowForward } from "react-icons/io";
 
 import AOS from "aos";
@@ -19,10 +19,32 @@ export const Service = () => {
       ? setStretchingAge( "" )
       : setStretchingAge( "openMenu" );
   };
+
+  const stretchingSectionRef = useRef( null );
+  const pilatesMatRef = useRef( null );
+  const stretchingRestaurativoRef = useRef( null );
+  const bienestarEmpresasRef = useRef( null );
+
+  useEffect( () => {
+    const { hash } = window.location;
+    if ( hash === "#stretchingSection" && stretchingSectionRef.current ) {
+      stretchingSectionRef.current.scrollIntoView( { behavior: "smooth" } );
+    } else if ( hash === "#pilatesMat" && pilatesMatRef.current ) {
+      pilatesMatRef.current.scrollIntoView( { behavior: "smooth" } );
+    } else if (
+      hash === "#stretchingRestaurativo" &&
+      stretchingRestaurativoRef.current
+    ) {
+      stretchingRestaurativoRef.current.scrollIntoView( { behavior: "smooth" } );
+    } else if ( hash === "#bienestarEmpresas" && bienestarEmpresasRef.current ) {
+      bienestarEmpresasRef.current.scrollIntoView( { behavior: "smooth" } );
+    }
+  }, [] );
+
   return (
     <>
       <div className="service__container">
-        <div className="section__service" id="stretchingSection">
+        <div className="section__service" id="stretchingSection" ref={stretchingSectionRef}>
           <div className="section__img"></div>
           <div className="section__text__container">
             <h2 className="section__title text__highlight header__text animate__animated animate__lightSpeedInRight animate__delay-0.5s">
@@ -56,7 +78,7 @@ export const Service = () => {
             </Link>
           </div>
         </div>
-        <div className="section__service pilatesMat" id='pilatesMat'>
+        <div className="section__service pilatesMat" id='pilatesMat' ref={pilatesMatRef}>
           <div className="section__img"></div>
           <div className="section__text__container">
             <div className="section__text--oneLine">
@@ -99,7 +121,7 @@ export const Service = () => {
             </Link>
           </div>
         </div>
-        <div className="section__service stretchingRestaurativo" id='stretchingRestaurativo'>
+        <div className="section__service stretchingRestaurativo" id='stretchingRestaurativo' ref={stretchingRestaurativoRef}>
           <div className="section__img"></div>
           <div className="section__text__container">
             <div>
@@ -140,7 +162,7 @@ export const Service = () => {
             </Link>
           </div>
         </div>
-        <div className="section__service bienestarEmpresas" id='bienestarEmpresas'>
+        <div className="section__service bienestarEmpresas" id='bienestarEmpresas' ref={bienestarEmpresasRef}>
           <div className="section__img"></div>
           <div className="section__text__container">
             <div>
