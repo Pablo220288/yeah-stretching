@@ -4,7 +4,7 @@
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto auto auto auto;
   column-gap: 1.5rem;
-  width: calc(100vw - 1rem);
+  width: calc(100% - 1rem);
   padding-top: 6rem;
   padding-left: 0.9rem;
   padding-right: 0.9rem;
@@ -81,8 +81,8 @@ h5 {
 .hero__icon-arrow {
   margin-bottom: 0.5rem;
   margin-top: 0.8rem;
-  height: 5vh;
-  width: 5vw;
+  height: 10%;
+  width: 10%;
 }
 
 .btn-primary {
@@ -95,7 +95,7 @@ h5 {
 .reviews__container {
   display: flex;
   flex-direction: column;
-  width: calc(100vw - 1rem);
+  width: calc(100% - 1rem);
   align-items: center;
   justify-content: center;
   align-content: center;
@@ -115,11 +115,11 @@ h5 {
 }
 
 .empresa__img {
-  width: 100vw;
+  width: 100%;
 }
 
 .empresa__text {
-  width: calc(100vw - 1rem);
+  width: calc(100% - 1rem);
 }
 
 .empresa__text p {
@@ -130,7 +130,7 @@ h5 {
 
 .reviews-text__container {
   margin: 0 auto;
-  width: calc(100vw - 1rem);
+  width: calc(100% - 1rem);
   width: 90%;
 }
 
