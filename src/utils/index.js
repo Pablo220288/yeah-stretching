@@ -1,5 +1,5 @@
 
 
-export * from './useBreakpoints';
-export * from './Breakpoints';
+export * from './breakpoints';
 export * from './mediaQueries';
+export * from './useBreakpoints';

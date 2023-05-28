@@ -3,7 +3,7 @@
 import useMediaQuery from "./mediaQueries";
 
 export default function useBreakpoints () {
-    const breakpoints = {
+    const breakpoint = {
         isXs: useMediaQuery( "(max-width: 390px)" ),
         isSm: useMediaQuery( "(min-width: 391px) and (max-width: 576px)" ),
         isMd: useMediaQuery( "(min-width: 577px) and (max-width: 768px)" ),
@@ -13,12 +13,12 @@ export default function useBreakpoints () {
         isXxxl: useMediaQuery( "(min-width: 1401px)" ),
         active: "xs"
     };
-    if ( breakpoints.isXs ) breakpoints.active = "xs";
-    if ( breakpoints.isSm ) breakpoints.active = "sm";
-    if ( breakpoints.isMd ) breakpoints.active = "md";
-    if ( breakpoints.isLg ) breakpoints.active = "lg";
-    if ( breakpoints.isXl ) breakpoints.active = "xl";
-    if ( breakpoints.isXxl ) breakpoints.active = "xxl";
-    if ( breakpoints.isXxxl ) breakpoints.active = "xxxl";
-    return breakpoints;
+    if ( breakpoint.isXs ) breakpoint.active = "xs";
+    if ( breakpoint.isSm ) breakpoint.active = "sm";
+    if ( breakpoint.isMd ) breakpoint.active = "md";
+    if ( breakpoint.isLg ) breakpoint.active = "lg";
+    if ( breakpoint.isXl ) breakpoint.active = "xl";
+    if ( breakpoint.isXxl ) breakpoint.active = "xxl";
+    if ( breakpoint.isXxxl ) breakpoint.active = "xxxl";
+    return breakpoint;
 }
