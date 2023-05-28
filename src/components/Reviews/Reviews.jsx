@@ -7,7 +7,7 @@ import "swiper/css/grid";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { ReviewsItem } from './ReviewsItem';
-import { breakpoints } from '../../utils';
+import { Breakpoint } from '../../utils';
 
 
 export const Reviews = ( { global } ) => {
@@ -18,7 +18,7 @@ export const Reviews = ( { global } ) => {
 
     return (
         <>
-            <breakpoints at="xs">
+            <Breakpoint at="xs">
                 <div className="reviews-container">
 
                     <Swiper
@@ -48,9 +48,9 @@ export const Reviews = ( { global } ) => {
                     </Swiper>
 
                 </div>
-            </breakpoints>
+            </Breakpoint>
 
-            <breakpoints at="sm">
+            <Breakpoint at="sm">
 
                 <div className="reviews-container">
 
@@ -81,108 +81,9 @@ export const Reviews = ( { global } ) => {
                     </Swiper>
                 </div>
 
-            </breakpoints>
+            </Breakpoint>
 
-            <breakpoints at="md">
-
-                <div className="reviews-container">
-
-                    <Swiper
-                        slidesPerView={3}
-                        spaceBetween={100}
-                        loop={true}
-                        pagination={{
-                            dynamicBullets: true,
-                        }}
-
-                        modules={[ Grid, Pagination, Navigation ]}
-                        className="mySwiper3"
-                    >
-                        {
-                            reviews.map( ( review, index ) => {
-                                return (
-
-                                    <SwiperSlide key={index}>
-                                        <ReviewsItem
-                                            key={index}
-                                            review={{ id: index, ...review }}
-                                        />
-                                    </SwiperSlide>
-                                )
-                            } )
-                        }
-                    </Swiper>
-                </div>
-
-            </breakpoints>
-
-            <breakpoints at="lg">
-
-                <div className="reviews-container">
-
-                    <Swiper
-                        slidesPerView={3}
-                        spaceBetween={50}
-                        loop={true}
-                        pagination={{
-                            dynamicBullets: true,
-                        }}
-
-                        modules={[ Grid, Pagination, Navigation ]}
-                        className="mySwiper3"
-                    >
-                        {
-                            reviews.map( ( review, index ) => {
-                                return (
-
-                                    <SwiperSlide key={index}>
-                                        <ReviewsItem
-                                            key={index}
-                                            review={{ id: index, ...review }}
-                                        />
-                                    </SwiperSlide>
-                                )
-                            } )
-                        }
-                    </Swiper>
-                </div>
-
-            </breakpoints>
-
-            <breakpoints at="xl">
-
-                <div className="reviews-container">
-
-                    <Swiper
-                        slidesPerView={4}
-                        spaceBetween={50}
-                        loop={true}
-                        pagination={{
-                            dynamicBullets: true,
-                        }}
-
-                        modules={[ Grid, Pagination, Navigation ]}
-                        className="mySwiper3"
-                    >
-                        {
-                            reviews.map( ( review, index ) => {
-                                return (
-
-                                    <SwiperSlide key={index}>
-                                        <ReviewsItem
-                                            key={index}
-                                            review={{ id: index, ...review }}
-                                        />
-                                    </SwiperSlide>
-                                )
-                            } )
-                        }
-                    </Swiper>
-                </div>
-
-            </breakpoints>
-
-            <breakpoints at="xxl">
+            <Breakpoint at="md">
 
                 <div className="reviews-container">
 
@@ -213,9 +114,108 @@ export const Reviews = ( { global } ) => {
                     </Swiper>
                 </div>
 
-            </breakpoints>
+            </Breakpoint>
 
-            <breakpoints at="xxxl">
+            <Breakpoint at="lg">
+
+                <div className="reviews-container">
+
+                    <Swiper
+                        slidesPerView={3}
+                        spaceBetween={50}
+                        loop={true}
+                        pagination={{
+                            dynamicBullets: true,
+                        }}
+
+                        modules={[ Grid, Pagination, Navigation ]}
+                        className="mySwiper3"
+                    >
+                        {
+                            reviews.map( ( review, index ) => {
+                                return (
+
+                                    <SwiperSlide key={index}>
+                                        <ReviewsItem
+                                            key={index}
+                                            review={{ id: index, ...review }}
+                                        />
+                                    </SwiperSlide>
+                                )
+                            } )
+                        }
+                    </Swiper>
+                </div>
+
+            </Breakpoint>
+
+            <Breakpoint at="xl">
+
+                <div className="reviews-container">
+
+                    <Swiper
+                        slidesPerView={4}
+                        spaceBetween={50}
+                        loop={true}
+                        pagination={{
+                            dynamicBullets: true,
+                        }}
+
+                        modules={[ Grid, Pagination, Navigation ]}
+                        className="mySwiper3"
+                    >
+                        {
+                            reviews.map( ( review, index ) => {
+                                return (
+
+                                    <SwiperSlide key={index}>
+                                        <ReviewsItem
+                                            key={index}
+                                            review={{ id: index, ...review }}
+                                        />
+                                    </SwiperSlide>
+                                )
+                            } )
+                        }
+                    </Swiper>
+                </div>
+
+            </Breakpoint>
+
+            <Breakpoint at="xxl">
+
+                <div className="reviews-container">
+
+                    <Swiper
+                        slidesPerView={3}
+                        spaceBetween={100}
+                        loop={true}
+                        pagination={{
+                            dynamicBullets: true,
+                        }}
+
+                        modules={[ Grid, Pagination, Navigation ]}
+                        className="mySwiper3"
+                    >
+                        {
+                            reviews.map( ( review, index ) => {
+                                return (
+
+                                    <SwiperSlide key={index}>
+                                        <ReviewsItem
+                                            key={index}
+                                            review={{ id: index, ...review }}
+                                        />
+                                    </SwiperSlide>
+                                )
+                            } )
+                        }
+                    </Swiper>
+                </div>
+
+            </Breakpoint>
+
+            <Breakpoint at="xxxl">
 
                 <div className="reviews-container">
 
@@ -246,7 +246,7 @@ export const Reviews = ( { global } ) => {
                     </Swiper>
                 </div>
 
-            </breakpoints>
+            </Breakpoint>
         </>
     );
 };
