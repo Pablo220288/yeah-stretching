@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import AOS from "aos";
-
 import { TbBolt, TbBallVolleyball } from "react-icons/tb";
 import { FiCoffee, FiStar } from "react-icons/fi";
 

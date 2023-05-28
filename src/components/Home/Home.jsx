@@ -1,11 +1,12 @@
-import global from "../../utils/global.json";
-import { BiHeart } from "react-icons/bi";
 
+
+import { Link } from 'react-router-dom';
+import { BiHeart } from "react-icons/bi";
 import AOS from "aos";
 
+import global from "../../utils/global.json";
 import { CardContainer } from "../Cards/CardContainer";
 import { Reviews } from "../Reviews/Reviews";
-import { Link } from 'react-router-dom';
 
 
 export const Home = () => {
@@ -18,7 +19,6 @@ export const Home = () => {
         <img
           className="hero__curve"
           src="https://res.cloudinary.com/ferjen/image/upload/v1685076073/yeah_stretching/icons/ys-animated-waves_qp7ro9.svg"
-          // src="https://res.cloudinary.com/ferjen/image/upload/v1685068539/yeah_stretching/icons/animated-waves_aa76ti.svg"
           alt="Imagen de curvas rosadas"
         />
       </section>

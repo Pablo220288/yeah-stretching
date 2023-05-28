@@ -1,9 +1,10 @@
-import { useEffect, useRef, useState } from "react";
-import { IoIosArrowForward } from "react-icons/io";
 
+
+import { useEffect, useRef, useState } from "react";
+import { Link } from "react-router-dom";
+import { IoIosArrowForward } from "react-icons/io";
 import AOS from "aos";
 
-import { Link } from "react-router-dom";
 
 export const Service = () => {
   AOS.init();
