@@ -3,7 +3,7 @@ import { BiHeart } from "react-icons/bi";
 
 import AOS from "aos";
 
-import { CardContainer } from "../CardContainer/CardContainer";
+import { CardContainer } from "../Cards/CardContainer";
 import { Reviews } from "../Reviews/Reviews";
 import { Link } from 'react-router-dom';
 
@@ -60,10 +60,10 @@ export const Home = () => {
             , desde el hogar.
           </h4>
 
-          <h5 className="text__highlight text-bold mt-3">
+          <h5 className="text__highlight text-bold mt-2">
             ¡Todos podemos y &nbsp;
           </h5>
-          <h5 className="text__highlight text-bold mb-3">
+          <h5 className="text__highlight text-bold mb-2">
             debemos hacer ejercicio!
           </h5>
 

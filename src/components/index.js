@@ -1,15 +1,12 @@
 
 
-export * from './About/About';
-export * from './Button/Button';
-export * from './CardContainer/CardContainer';
-export * from './CardItem/CardItem';
-export * from './ContactForm/ContactForm';
-export * from './Footer/Footer';
-export * from './Home/Home';
-export * from './Navbar/Navbar';
-export * from './Reviews/Reviews';
-export * from './ReviewsItem/ReviewsItem';
-export * from './Service/Service';
+export * from './About';
+export * from './Cards';
+export * from './Contact';
+export * from './Footer';
+export * from './Home';
+export * from './Navbar';
+export * from './Reviews';
+export * from './Service';
 
 // export { Navbar } from './Navbar/Navbar';

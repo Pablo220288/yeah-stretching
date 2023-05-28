@@ -1,6 +1,6 @@
 
 
-import { CardItem } from '../CardItem/CardItem';
+import { CardItem } from './CardItem';
 
 
 export const CardContainer = ( { global } ) => {

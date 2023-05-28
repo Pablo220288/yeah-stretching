@@ -6,9 +6,11 @@ import "swiper/css";
 import "swiper/css/grid";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
+import { ReviewsItem } from './ReviewsItem';
+import { Breakpoint } from '../../utils';
 
-import { ReviewsItem } from '../ReviewsItem/ReviewsItem';
-import { Breakpoint } from '../Breakpoints/Breakpoints';
+// import { ReviewsItem } from './ReviewsItem';
+// import { Breakpoint } from '../Breakpoints/Breakpoints';
 
 export const Reviews = ( { global } ) => {
 

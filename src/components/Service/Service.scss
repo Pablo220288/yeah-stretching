@@ -100,7 +100,7 @@
 
       .section__text {
         font-size: 1rem;
-        line-height: 1.5em;
+        line-height: 1.25em;
         font-family: $ff-primary;
       }
 
@@ -152,8 +152,8 @@
         color: $clr-black;
         font-family: $ff-secondary;
         margin: 10px 0px 2px 0px;
-        font-size: 0.6rem;
-        line-height: 12px;
+        font-size: 0.9rem;
+        line-height: 1.5em;
       }
 
       .service__author {
@@ -338,9 +338,8 @@
         }
 
         .section__text {
-          line-height: 1.5em;
+          line-height: 1.25em;
           font-size: 1rem;
-          line-height: 1.5em;
         }
 
         details.accordion {
@@ -350,7 +349,7 @@
           }
 
           .accordion_text {
-            line-height: 1.5em;
+            line-height: 1.25em;
             padding: 0;
             font-family: $ff-primary;
             font-size: 1rem;
@@ -363,7 +362,7 @@
 
         .service__appointment {
           font-size: 0.9rem;
-          line-height: 17px;
+          line-height: 1.25em;
         }
 
         .service__author {

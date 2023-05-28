@@ -5,18 +5,22 @@ export const CardItem = ( { servicio } ) => {
 
   return (
     <div className="card-container">
+
       <div className="card-container__image">
         <img className="card" src={imgUrl} alt={altTxt} />
       </div>
+
       <div className="card-servicios mb-1">
         <h3>{title}</h3>
         <div className="servicios-pill__container">
 
-          {pills.map( ( pill, index ) => (
-            <p key={index} className="servicios-pill">
-              {pill}
-            </p>
-          ) )}
+          {
+            pills.map( ( pill, index ) => (
+              <p key={index} className="servicios-pill">
+                {pill}
+              </p>
+            ) )
+          }
 
         </div>
       </div>
@@ -25,8 +29,8 @@ export const CardItem = ( { servicio } ) => {
         to={`${link}`}
         className="btn-primary__card mt-2"
         type="button"
-        aria-label="Obtén más información sobre mí"
-        title="Haz clic aquí para conocer más acerca de mí"
+        aria-label="Obtén más información sobre mis servicios"
+        title="Haz clic aquí para conocer sobre mis servicios"
       >
         más info &gt;
       </Link>

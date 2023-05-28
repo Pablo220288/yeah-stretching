@@ -4,7 +4,6 @@ import AOS from "aos";
 import { TbBolt, TbBallVolleyball } from "react-icons/tb";
 import { FiCoffee, FiStar } from "react-icons/fi";
 
-import { Button } from "../Button/Button";
 
 export const About = () => {
   AOS.init();
@@ -133,7 +132,7 @@ export const About = () => {
             rel="noopener noreferrer"
             title="Descargar CV en formato PDF"
           >
-            <Button className="ff-primary">Descargar</Button>
+            <button className="btn-primary ff-primary">Descargar</button>
           </Link>
         </div>
         <div
