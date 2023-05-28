@@ -26,12 +26,11 @@ html,
 body {
     scroll-behavior: smooth;
     width: 100%;
+    overflow-x: hidden;
 }
 
 body {
     color: $clr-black;
-    font-size: $ff-primary;
-    overflow-x: hidden;
 }
 
 main {
@@ -49,5 +48,4 @@ a {
     width: 100%;
     margin: 0;
     padding: 0;
-
 }
