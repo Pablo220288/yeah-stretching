@@ -2,10 +2,26 @@ import { Link } from "react-router-dom";
 import AOS from "aos";
 import { TbBolt, TbBallVolleyball } from "react-icons/tb";
 import { FiCoffee, FiStar } from "react-icons/fi";
+import { useEffect, useRef } from 'react';
 
 
 export const About = () => {
   AOS.init();
+
+  const pageAboutRef = useRef( null );
+
+
+  useEffect( () => {
+
+    const { hash } = window.location;
+
+    if ( hash === "#pageAbout" && pageAboutRef.current ) {
+      setTimeout( () => {
+        pageAboutRef.current.scrollIntoView( { behavior: "smooth" } );
+      }, 100 );
+    }
+
+  }, [] );
 
   return (
     <>

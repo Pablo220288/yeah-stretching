@@ -22,8 +22,8 @@ export const Service = () => {
   };
 
   const stretchingSectionRef = useRef( null );
-  const pilatesMatRef = useRef( null );
-  const stretchingRestaurativoRef = useRef( null );
+  const pilatesMatSectionRef = useRef( null );
+  const stretchingRestaurativoSectionRef = useRef( null );
   const bienestarEmpresasRef = useRef( null );
 
   useEffect( () => {
@@ -32,16 +32,16 @@ export const Service = () => {
       setTimeout( () => {
         stretchingSectionRef.current.scrollIntoView( { behavior: "smooth" } );
       }, 100 );
-    } else if ( hash === "#pilatesMat" && pilatesMatRef.current ) {
+    } else if ( hash === "#pilatesMatSection" && pilatesMatSectionRef.current ) {
       setTimeout( () => {
-        pilatesMatRef.current.scrollIntoView( { behavior: "smooth" } );
+        pilatesMatSectionRef.current.scrollIntoView( { behavior: "smooth" } );
       }, 100 );
     } else if (
-      hash === "#stretchingRestaurativo" &&
-      stretchingRestaurativoRef.current
+      hash === "#stretchingRestaurativoSection" &&
+      stretchingRestaurativoSectionRef.current
     ) {
       setTimeout( () => {
-        stretchingRestaurativoRef.current.scrollIntoView( { behavior: "smooth" } );
+        stretchingRestaurativoSectionRef.current.scrollIntoView( { behavior: "smooth" } );
       }, 100 );
     } else if (
       hash === "#bienestarEmpresas" &&
@@ -56,6 +56,7 @@ export const Service = () => {
   return (
     <>
       <div className="service__container">
+
         <div className="section__service" id="stretchingSection" ref={stretchingSectionRef}>
           <div className="section__img"></div>
           <div className="section__text__container">
@@ -90,7 +91,9 @@ export const Service = () => {
             </Link>
           </div>
         </div>
-        <div className="section__service pilatesMat" id='pilatesMat' ref={pilatesMatRef}>
+
+        <div className="section__service pilatesMat" id='pilatesMatSection' ref={pilatesMatSectionRef}>
+          <div></div>
           <div className="section__img"></div>
           <div className="section__text__container">
             <div className="section__text--oneLine">
@@ -133,7 +136,9 @@ export const Service = () => {
             </Link>
           </div>
         </div>
-        <div className="section__service stretchingRestaurativo" id='stretchingRestaurativo' ref={stretchingRestaurativoRef}>
+
+        <div className="section__service stretchingRestaurativo" id='stretchingRestaurativoSection' ref={stretchingRestaurativoSectionRef}>
+          <div></div>
           <div className="section__img"></div>
           <div className="section__text__container">
             <div>
@@ -175,6 +180,7 @@ export const Service = () => {
           </div>
         </div>
         <div className="section__service bienestarEmpresas" id='bienestarEmpresas' ref={bienestarEmpresasRef}>
+          <div></div>
           <div className="section__img"></div>
           <div className="section__text__container">
             <div>

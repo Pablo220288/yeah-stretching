@@ -60,10 +60,10 @@ export const Home = () => {
             , desde el hogar.
           </h4>
 
-          <h5 className="text__highlight text-bold mt-2">
+          <h5 className="text__highlight text-bold mt-1">
             ¡Todos podemos y &nbsp;
           </h5>
-          <h5 className="text__highlight text-bold mb-2">
+          <h5 className="text__highlight text-bold mb-1">
             debemos hacer ejercicio!
           </h5>
 
@@ -72,17 +72,11 @@ export const Home = () => {
         <article className="hero__title--third animate__animated animate__lightSpeedInLeft animate__delay-0.5s">
           <h4 className="text__hero__end">
             Por eso, mi gran motivación es que mejores tu salud a través de mis
-            clases, que sientas{" "}
-            <span className="hero__title--b">
-              {" "}
-              los resultados de forma progresiva y que puedas conectar con eso
-              tiempo de
-            </span>
-            autocuidado para vos.
+            clases, que sientas los resultados de forma progresiva y que puedas conectar con ese tiempo de autocuidado para vos.
           </h4>
 
           <Link
-            to="/about"
+            to="/about/#pageAbout"
             className="btn-primary"
             type="button"
             aria-label="Obtén más información sobre mí"
@@ -120,7 +114,7 @@ export const Home = () => {
         >
           <h2 className="mt-2 mb-1">Si tenés una Empresa,</h2>
           <p className="mb-2">
-            Invertí en la salud y bienestar pa tu recurso más valioso: el capital humano.
+            Invertí en la salud y bienestar para tu recurso más valioso: el capital humano.
           </p>
           <div className='empresa__container--btn'>
             <Link
@@ -148,7 +142,7 @@ export const Home = () => {
         <div data-aos="fade-right" data-aos-offset="200">
           <div className="reviews-text__container">
             <div className="reviews-title">
-              <h2 className=" text__highlight mt-1 mb-2">
+              <h2 className=" text__highlight mt-1">
                 Opiniones&nbsp;
                 <BiHeart />
               </h2>

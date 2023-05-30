@@ -221,7 +221,7 @@ export const Reviews = ( { global } ) => {
 
                     <Swiper
                         slidesPerView={4}
-                        spaceBetween={50}
+                        spaceBetween={10}
                         pagination={{
                             dynamicBullets: true,
                         }}
